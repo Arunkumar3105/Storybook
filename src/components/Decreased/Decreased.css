@@ -1,0 +1,32 @@
+.exam1 label input {
+  position: absolute;
+  display: none;
+  /* color: rgb(165, 53, 53) !important; */
+}
+.exam1 {
+  margin-left: 10px;
+}
+.exam1 label span {
+  text-align: center;
+  padding: 5px 20px;
+  display: inline-block;
+}
+.exam1 label {
+  line-height: 27px;
+
+  font-size: 18px;
+}
+.exam1 input:checked + span {
+  background-color: teal;
+
+  color: white;
+
+  border: 2px solid grey;
+}
+.exam1 label input + span {
+  color: rgb(10, 9, 9);
+  width: 50px;
+  font-size: 15px;
+  border: 2px solid teal;
+  border-radius: 5px;
+}
