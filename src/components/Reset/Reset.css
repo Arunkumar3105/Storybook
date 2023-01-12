@@ -1,0 +1,30 @@
+.reset label input {
+  position: absolute;
+  display: none;
+  /* color: rgb(165, 53, 53) !important; */
+}
+
+.reset {
+  margin-left: 10px;
+}
+
+.reset label input + span {
+  color: white;
+  width: 80px;
+  font-size: 15px;
+  border: 2px solid teal;
+  border-radius: 5px;
+  background-color: grey;
+}
+
+.reset label span {
+  text-align: center;
+  padding: 5px 20px;
+  display: inline-block;
+}
+
+.reset label {
+  line-height: 27px;
+
+  font-size: 18px;
+}

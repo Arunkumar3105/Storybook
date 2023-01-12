@@ -1,0 +1,141 @@
+.scar label input {
+  position: absolute;
+  display: none;
+  /* color: rgb(165, 53, 53) !important; */
+}
+.cslevel label input {
+  position: absolute;
+  display: none;
+}
+.reset label input {
+  position: absolute;
+  display: none;
+  /* color: rgb(165, 53, 53) !important; */
+}
+
+.scar {
+  margin-left: 10px;
+}
+.reset {
+  margin-left: 10px;
+}
+.cslevel {
+  margin-left: 10px;
+}
+
+.scar label input + span {
+  color: rgb(10, 9, 9);
+  width: 80px;
+  font-size: 15px;
+  border: 2px solid teal;
+  border-radius: 5px;
+}
+.cslevel label input + span {
+  color: rgb(10, 9, 9);
+  width: 50px;
+  font-size: 15px;
+  border: 2px solid teal;
+  border-radius: 5px;
+}
+.clevel label input + span {
+  color: rgb(10, 9, 9);
+  width: 140px;
+  font-size: 15px;
+  border: 2px solid teal;
+  border-radius: 5px;
+}
+.reset label input + span {
+  color: white;
+  width: 80px;
+  font-size: 15px;
+  border: 2px solid teal;
+  border-radius: 5px;
+  background-color: grey;
+}
+
+.reset label span {
+  text-align: center;
+  padding: 5px 20px;
+  display: inline-block;
+}
+.scar label span {
+  text-align: center;
+  padding: 5px 20px;
+  display: inline-block;
+}
+.cslevel label span {
+  text-align: center;
+  padding: 5px 5px;
+  display: inline-block;
+}
+
+.scar label {
+  line-height: 27px;
+
+  font-size: 18px;
+}
+.reset label {
+  line-height: 27px;
+
+  font-size: 18px;
+}
+.cslevel label {
+  line-height: 27px;
+
+  font-size: 18px;
+}
+.scar input:checked + span {
+  background-color: teal;
+
+  color: white;
+
+  border: 2px solid grey;
+}
+.cslevel input:checked + span {
+  background-color: teal;
+
+  color: white;
+
+  border: 2px solid grey;
+}
+.size {
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.other {
+  margin-left: 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.exam label input {
+  position: absolute;
+  display: none;
+  /* color: rgb(165, 53, 53) !important; */
+}
+.exam {
+  margin-left: 10px;
+}
+.exam label span {
+  text-align: center;
+  padding: 5px 20px;
+  display: inline-block;
+}
+.exam label {
+  line-height: 27px;
+
+  font-size: 18px;
+}
+.exam input:checked + span {
+  background-color: teal;
+
+  color: white;
+
+  border: 2px solid grey;
+}
+.exam label input + span {
+  color: rgb(10, 9, 9);
+  width: 100px;
+  font-size: 15px;
+  border: 2px solid teal;
+  border-radius: 5px;
+}
