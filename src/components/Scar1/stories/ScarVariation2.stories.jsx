@@ -48,27 +48,26 @@ const Status = [
   { value: "Unhealed", name: "status", classname: "scar" },
   { value: "Not-related", name: "status", classname: "scar" },
 ];
-const Side = [
-  { value: "Right", name: "side", classname: "scar" },
-  { value: "Left", name: "side", classname: "scar" },
-  { value: "Bilateral", name: "side", classname: "scar" },
-];
-const level = [
-  { value: "C1" },
-  { value: "C2" },
-  { value: "C3" },
-  { value: "C4" },
-  { value: "C5" },
-  { value: "C6" },
-  { value: "C7" },
-];
+// const Side = [
+//   { value: "Right", name: "side", classname: "scar" },
+//   { value: "Left", name: "side", classname: "scar" },
+//   { value: "Bilateral", name: "side", classname: "scar" },
+// ];
+// const level = [
+//   { value: "C1" },
+//   { value: "C2" },
+//   { value: "C3" },
+//   { value: "C4" },
+//   { value: "C5" },
+//   { value: "C6" },
+//   { value: "C7" },
+// ];
 const AppearanceOther = [{ name: "appearance", classname: "scar" }];
 const StatusOther = [{ name: "status", classname: "scar" }];
 const aspectOther = [{ name: "aspect", classname: "scar" }];
 const Scarreset = [{ name: "csscar" }];
 const Appearancereset = [{ name: "appearance" }];
 const Statusreset = [{ name: "status" }];
-const Sidereset = [{ name: "side" }];
 const aspectreset = [{ name: "aspect" }];
 
 // const Template = ({}) => (
@@ -81,14 +80,13 @@ export const Scarvariation2 = () => (
       Appearance={Appearance}
       Scar={Scar}
       aspectreset={aspectreset}
-      Sidereset={Sidereset}
       Statusreset={Statusreset}
       Appearancereset={Appearancereset}
       Scarreset={Scarreset}
       aspectOther={aspectOther}
       StatusOther={StatusOther}
       AppearanceOther={AppearanceOther}
-      Side={Side}
+      
     />
   </span>
 );
