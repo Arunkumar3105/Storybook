@@ -8,7 +8,7 @@ const DecreasedButton = [
     { value: "Decreased", name: "decreased", classname: "scar" },
   ];
   const strength = [
-    { value: "Biceps", classname: "scar" },
+    { value: "Biceps", classname:  "scar" },
     { value: "Triceps", classname: "scar" },
     { value: "Wrist Extension", classname: "exam" },
     { value: "Grip", classname: "scar" },
