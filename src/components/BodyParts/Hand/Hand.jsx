@@ -124,191 +124,191 @@ function Hand({
       ))}
       <ScarVariation2
         aspect={aspect}
-        Status={status}
-        Appearance={appearance}
-        Scar={scar}
+        status={status}
+        appearance={appearance}
+        scar={scar}
         aspectreset={aspectreset}
-        Statusreset={statusreset}
-        Appearancereset={appearancereset}
-        Scarreset={scarreset}
-        aspectOther={aspectOther}
-        StatusOther={statusother}
-        AppearanceOther={appearanceOther}
+        statusreset={statusreset}
+        appearancereset={appearancereset}
+        scarreset={scarreset}
+        aspectother={aspectOther}
+        statusother={statusother}
+        appearanceother={appearanceOther}
       />
       <div>
         <h2>Examination</h2>
         <span>
           <RadioButton InputArray={rhexam} />
           <NotPerformed
-            Notperform={rhexamnperform}
+            notperform={rhexamnperform}
             exam1reset={rhexamnpreset}
-            Reason={rhexamnpreason}
+            reason={rhexamnpreason}
             other2={rhexamnpother}
             examreset={rhexamnpreasonreset}
           />
         </span>
         <h2>Normal Exam</h2>
         <span style={{ display: "flex" }}>
-          <RadioButton InputArray={nexamradio} />
-          <PainScaleButton painScale={nexampainsale} />
-          <Reset1 Resetall={nexamreset} />
+          <RadioButton inputarray={nexamradio} />
+          <PainScaleButton painscale={nexampainsale} />
+          <Reset1 resetall={nexamreset} />
         </span>
         <h3>Findings</h3>
         <span>
           <Findings
-            Swelling={swelling}
-            Erythema={erythema}
-            Effusion={effusion}
-            Redness={redness}
-            Edema={edema}
-            Ecchymosis={ecchymosis}
-            Deformity={deformity}
-            Swelling1={swelling1}
-            Erythema1={erythema1}
-            Effusion1={effusion1}
-            Redness1={redness1}
-            Edema1={edema1}
-            Ecchymosis1={ecchymosis1}
-            Deformity1={deformity1}
-            Fyes={fyes}
-            Fno={fno}
-            FNoother={fnoother}
-            FyesOther={fyesother}
+            swelling={swelling}
+            erythema={erythema}
+            effusion={effusion}
+            redness={redness}
+            edema={edema}
+            ecchymosis={ecchymosis}
+            deformity={deformity}
+            swelling1={swelling1}
+            erythema1={erythema1}
+            effusion1={effusion1}
+            redness1={redness1}
+            edema1={edema1}
+            ecchymosis1={ecchymosis1}
+            deformity1={deformity1}
+            fyes={fyes}
+            fno={fno}
+            fNoother={fnoother}
+            fyesother={fyesother}
           />
         </span>
-        <h3>tenderness</h3>
+        <h3>Tenderness</h3>
         <span style={{ display: "flex" }}>
-          <RadioButton InputArray={tenderness} />
-          <Reset1 Resetall={treset} />
+          <RadioButton inputarray={tenderness} />
+          <Reset1 resetall={treset} />
         </span>
         <div style={{ marginLeft: "30px" }}>
           <h4>Classification</h4>
           <span style={{ display: "flex" }}>
-            <CheckBox InputArray1={classification} />
+            <CheckBox inputarray1={classification} />
             <Others other={clother} />
-            <Reset1 Resetall={clreset} />
+            <Reset1 resetall={clreset} />
           </span>
           <h4>Aspect</h4>
           <span style={{ display: "flex" }}>
-            <CheckBox InputArray1={aspect1} />
+            <CheckBox inputarray1={aspect1} />
             <Others other={asother} />
-            <Reset1 Resetall={asreset} />
+            <Reset1 resetall={asreset} />
           </span>
           <h4>position</h4>
           <span style={{ display: "flex" }}>
-            <CheckBox InputArray1={position} />
+            <CheckBox inputarray1={position} />
             <Others other={positionother} />
-            <Reset1 Resetall={positionreset} />
+            <Reset1 resetall={positionreset} />
           </span>
         </div>
         <h3>ROM</h3>
         <span>
-          <RadioButton InputArray={rhandrom} />
+          <RadioButton inputarray={rhandrom} />
           <NotPerformed
-            Notperform={rhromnperform}
+            notperform={rhromnperform}
             exam1reset={rhandromreset}
-            Reason={rhromnpreason}
+            reason={rhromnpreason}
             other2={rhromnpother}
             examreset={rhromnpreasonreset}
           />
         </span>
         <span style={{ display: "flex" }}>
-          <CheckBox InputArray1={checkabrom} />
-          <Reset1 Resetall={romabreset} />
+          <CheckBox inputarray1={checkabrom} />
+          <Reset1 resetall={romabreset} />
         </span>
         <div style={{ marginLeft: "30px" }}>
-          <Fingervalue Finger={rhallfinger} />
-          <Fingervalue Finger={rhthumbfinger} />
-          <Fingervalue Finger={rhsecondfinger} />
-          <Fingervalue Finger={rhthirdfinger} />
-          <Fingervalue Finger={rhfourthfinger} />
-          <Fingervalue Finger={rhfifthfinger} />
+          <Fingervalue finger={rhallfinger} />
+          <Fingervalue finger={rhthumbfinger} />
+          <Fingervalue finger={rhsecondfinger} />
+          <Fingervalue finger={rhthirdfinger} />
+          <Fingervalue finger={rhfourthfinger} />
+          <Fingervalue finger={rhfifthfinger} />
           <h4>Self Restricted</h4>
           <YesNo
-            Suboptimal={rhnovalue}
-            Suboptimalreset={rhyesreset}
-            Suboptimal1={rhyesno}
+            suboptimal={rhnovalue}
+            suboptimalreset={rhyesreset}
+            suboptimal1={rhyesno}
           />
           <h4>Pain Causing motion</h4>
           <span style={{ display: "flex" }}>
-            <CheckBox InputArray1={rhpcausingmotion} />
-            <Reset1 Resetall={rhpcmotion} />
+            <CheckBox inputarray1={rhpcausingmotion} />
+            <Reset1 resetall={rhpcmotion} />
           </span>
         </div>
         <h3>Suboptimal Effort</h3>
         <YesNo
-          Suboptimal={soptimalnovalue}
-          Suboptimalreset={soptimalyesreset}
-          Suboptimal1={soptimalyesno}
+          suboptimal={soptimalnovalue}
+          suboptimalreset={soptimalyesreset}
+          suboptimal1={soptimalyesno}
         />
         <h3>Atrophy</h3>
         <YesNo
-          Suboptimal={atrophynovalue}
-          Suboptimalreset={atrophyyesreset}
-          Suboptimal1={atrophyyesno}
+          suboptimal={atrophynovalue}
+          suboptimalreset={atrophyyesreset}
+          suboptimal1={atrophyyesno}
         />
         <h3>Instability</h3>
         <YesNo
-          Suboptimal={instabilitynovalue}
-          Suboptimalreset={instabilityyesreset}
-          Suboptimal1={instabilityyesno}
+          suboptimal={instabilitynovalue}
+          suboptimalreset={instabilityyesreset}
+          suboptimal1={instabilityyesno}
         />
         <h3>Triggering</h3>
         <YesNo
-          Suboptimal={triggeringnovalue}
-          Suboptimalreset={triggeringyesreset}
-          Suboptimal1={triggeringyesno}
+          suboptimal={triggeringnovalue}
+          suboptimalreset={triggeringyesreset}
+          suboptimal1={triggeringyesno}
         />
         <h3>Amputated</h3>
         <YesNo
-          Suboptimal={amputatednovalue}
-          Suboptimalreset={amputatedyesreset}
-          Suboptimal1={amputatedyesno}
+          suboptimal={amputatednovalue}
+          suboptimalreset={amputatedyesreset}
+          suboptimal1={amputatedyesno}
         />
         <h3>Symptom Magnification</h3>
         <YesNo
-          Suboptimal={smagnificationnovalue}
-          Suboptimalreset={smagnificationyesreset}
-          Suboptimal1={smagnificationyesno}
+          suboptimal={smagnificationnovalue}
+          suboptimalreset={smagnificationyesreset}
+          suboptimal1={smagnificationyesno}
         />
         <h3>Sensation</h3>
         <span>
           <NegativePositive
-            Negativepositive={sensationva}
-            Negativepositive1={sensationva1}
+            negativepositive={sensationva}
+            negativepositive1={sensationva1}
           />
           <NotPerformed
-            Notperform={rhsensationnperform}
+            notperform={rhsensationnperform}
             exam1reset={rhsensationnpreset}
-            Reason={rhsensationnpreason}
+            reason={rhsensationnpreason}
             other2={rhsensationnpother}
             examreset={rhsensationnpreasonreset}
           />
         </span>
         <h3>Thumb CMC Motion</h3>
         <span style={{ display: "flex" }}>
-          <RadioButton InputArray={cmcmotion} />
-          <Reset1 Resetall={cmcreset} />
+          <RadioButton inputarray={cmcmotion} />
+          <Reset1 resetall={cmcreset} />
         </span>
         <br />
         <div style={{ display: "flex" }}>
-          <RadioButton InputArray={thumbcmcyes} />
-          <Reset1 Resetall={thumbcmcyesreset} />
+          <RadioButton inputarray={thumbcmcyes} />
+          <Reset1 resetall={thumbcmcyesreset} />
         </div>
         <h3>Tendon Lac</h3>
         <span>
           <YesNo
-            Suboptimal={tendonnovalue}
-            Suboptimalreset={tendonyesreset}
-            Suboptimal1={tendonyesno}
+            suboptimal={tendonnovalue}
+            suboptimalreset={tendonyesreset}
+            suboptimal1={tendonyesno}
           />
         </span>
         <h3>Add Details</h3>
         <span style={{ display: "flex" }}>
           <YesNo
-            Suboptimal={adddetailsnovalue}
-            Suboptimalreset={addreset}
-            Suboptimal1={adddetailsyesno}
+            suboptimal={adddetailsnovalue}
+            suboptimalreset={addreset}
+            suboptimal1={adddetailsyesno}
           />
         </span>
       </div>
