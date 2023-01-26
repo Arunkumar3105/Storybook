@@ -12,7 +12,9 @@ const statusvalue = [
   { value: "Unhealed", classname: "scar", name: "status" },
 ];
 const statusreset = [{ name: "status" }];
-const statusother = [{ name: "status", otherclassname: "scar" }];
+const statusother = [
+  { name: "status", otherclassname: "scar", txtname: "statustxt" },
+];
 // Appearance
 const appearancevalue = [
   { value: "Scar", classname: "scar", name: "Appearance" },
@@ -21,7 +23,9 @@ const appearancevalue = [
   { value: "Portal", classname: "scar", name: "Appearance" },
   { value: "Laceration", classname: "scar", name: "Appearance" },
 ];
-const appearanceother = [{ name: "Appearance", otherclassname: "scar" }];
+const appearanceother = [
+  { name: "Appearance", otherclassname: "scar", txtname: "AppearanceTxt" },
+];
 const appearancereset = [{ name: "Appearance" }];
 //Aspect
 const aspectvalue = [
@@ -57,22 +61,28 @@ const examnpreason = [
   { value: "Surgery", classname: "scar", name: "TSExamNotperform" },
   {
     value: "Complaint of pain",
-    classname: "ExamtableNp",
-    name: "TSExamNotperform",
+    classname: "exam1",
+    name: "exam1",
   },
   {
     value: "Non-Cooperation",
-    classname: "ExamtableNp",
-    name: "TSExamNotperform",
+    classname: "exam1",
+    name: "exam1",
   },
   {
     value: "Not Wish to Perform",
-    classname: "ExamtableNp",
-    name: "TSExamNotperform",
+    classname: "exam1",
+    name: "exam1",
   },
-  { value: "Brace", classname: "scar", name: "TSExamNotperform" },
+  { value: "Brace", classname: "scar", name: "scar" },
 ];
-const examnpother = [{ name: "TSExamNotperform", otherclassname: "scar" }];
+const examnpother = [
+  {
+    name: "TSExamNotperform",
+    otherclassname: "scar",
+    txtname: "ExamNpperformtxt",
+  },
+];
 const examnpreasonreset = [{ name: "TSExamNotperform" }];
 const examnotpform = [{ classn: "s" }];
 // Normal Exam
@@ -95,9 +105,10 @@ const tstenderclassification = [
   { name: "Tenderness", value: "Moderate", classname: "scar" },
   { name: "Tenderness", value: "Severe", classname: "scar" },
 ];
-const cother = [{ name: "Tenderness", otherclassname: "scar" }];
+const cother = [
+  { name: "Tenderness", otherclassname: "scar", txtname: "Tendernestxt" },
+];
 const creset = [{ name: "Tenderness" }];
-const clevel = [{ name: "Clevel", value: "T1-T12", classname: "scar" }];
 const level2 = [
   { value: "T1" },
   { value: "T2" },
@@ -126,8 +137,8 @@ const level3 = [
   { value: "T11" },
   { value: "T12" },
 ];
-const other = [{ name: "csalllevel" }];
-const other2 = [{ name: "csalllevel" }];
+const other = [{ name: "csalllevel", txtname: "txtTlevel" }];
+const other2 = [{ name: "csalllevel", txtname: "Sleveltxt" }];
 const value1 = [{ value: "T1-T12", name: "csalllevel" }];
 const value2 = [{ value: "T1-T12", name: "csalllevel" }];
 const resetvalue1 = [{ name: "csalllevel" }];
@@ -140,7 +151,9 @@ const position = [
   { name: "position", value: "Parathoracic muscles", classname: "exam1" },
   { name: "position", value: "Midline", classname: "scar" },
 ];
-const pother = [{ name: "position", otherclassname: "scar" }];
+const pother = [
+  { name: "position", otherclassname: "scar", txtname: "Lpositiontxt" },
+];
 const preset = [{ name: "position" }];
 const sides = [
   { name: "Sides", value: "Right", classname: "scar" },
@@ -155,14 +168,15 @@ const tsspasmclassification = [
   { name: "Spasmc", value: "Moderate", classname: "scar" },
   { name: "Spasmc", value: "Severe", classname: "scar" },
 ];
-const spasmother = [{ name: "Spasmc", otherclassname: "scar" }];
+const spasmother = [
+  { name: "Spasmc", otherclassname: "scar", txtname: "SClasificationtxt" },
+];
 const spasmreset = [{ name: "Spasmc" }];
 const spasm = [
   { name: "Spasm", value: "No", classname: "scar" },
   { name: "Spasm", value: "Yes", classname: "scar" },
 ];
 const spasmreset1 = [{ name: "Spasm" }];
-const spasmlevel = [{ name: "slevel", value: "T1-T12", classname: "scar" }];
 const tsslevelv = [{ iname: "slevel", resetname: "slevel" }];
 const tssinput = [
   { name: "slevelIdermotome", value: "T1", classname: "scar" },
@@ -180,7 +194,9 @@ const tssinput2 = [
   { name: "slevelIdermotome", value: "T11", classname: "scar" },
   { name: "slevelIdermotome", value: "T12", classname: "scar" },
 ];
-const tsslevelother = [{ otherclassname: "scar", name: "slevel" }];
+const tsslevelother = [
+  { otherclassname: "scar", name: "slevel", txtname: "Sleveltxt" },
+];
 const sindreset = [{ name: "slevelIdermotome" }];
 const spasmposition = [
   {
@@ -190,7 +206,9 @@ const spasmposition = [
   },
   { name: "Sposition", value: "Midline", classname: "scar" },
 ];
-const spasmpositionother = [{ name: "Sposition", otherclassname: "scar" }];
+const spasmpositionother = [
+  { name: "Sposition", otherclassname: "scar", txtname: "Spositiontxt" },
+];
 const spasmpreset = [{ name: "Sposition" }];
 const spasmsides = [
   { name: "SSides", value: "Right", classname: "scar" },
@@ -208,30 +226,43 @@ const tsromnperform = [
 ];
 const tsromnpreset = [{ name: "TSrom" }];
 const tsromnpreason = [
-  { value: "Surgery", classname: "scarNp2", name: "TSromNotperform" },
+  { value: "Surgery", classname: "scar", name: "TSromNotperform" },
   {
     value: "Complaint of pain",
-    classname: "ExamtableNp",
+    classname: "exam1",
     name: "TSromNotperform",
   },
   {
     value: "Non-Cooperation",
-    classname: "ExamtableNp",
+    classname: "exam1",
     name: "TSromNotperform",
   },
   {
     value: "Not Wish to Perform",
-    classname: "ExamtableNp",
+    classname: "exam1",
     name: "TSromNotperform",
   },
   { value: "Brace", classname: "scar", name: "TSromNotperform" },
 ];
-const tsromnpother = [{ name: "TSromNotperform", otherclassname: "scar" }];
+const tsromnpother = [
+  {
+    name: "TSromNotperform",
+    otherclassname: "scar",
+    txtname: "romnNperformtxt",
+  },
+];
 const tsromnpreasonreset = [{ name: "TSromNotperform" }];
 const romnotpform = [{ classn: "scarr1" }];
 const yesself = [{ value: "No", classname: "scar", name: "Srestricted" }];
 const selfyesreset = [{ name: "Srestricted" }];
-const sryesno = [{ value: "Yes", name: "Srestricted", classname: "scar" }];
+const sryesno = [
+  {
+    value: "Yes",
+    name: "Srestricted",
+    classname: "scar",
+    txtname: "Srestrictedtxt",
+  },
+];
 const paincm = [
   { value: "All", name: "Pcausingmotion", classname: "scar" },
   { value: "Flexion", name: "Pcausingmotion", classname: "scar" },
@@ -241,19 +272,37 @@ const paincmreset = [{ name: "paincausingmreset" }];
 // Suboptimal
 const soptimalno = [{ value: "No", classname: "scar", name: "Suboptimal" }];
 const soptimalyesreset = [{ name: "Suboptimal" }];
-const soptimalyes = [{ value: "Yes", name: "Suboptimal", classname: "scar" }];
+const soptimalyes = [
+  {
+    value: "Yes",
+    name: "Suboptimal",
+    classname: "scar",
+    txtname: "Suboptimaltxt",
+  },
+];
 //Atrophy
 const atrophyno = [{ value: "No", classname: "scar", name: "Atrophy" }];
 const atrophyyesreset = [{ name: "Atrophy" }];
-const atrophyyes = [{ value: "Yes", name: "Atrophy", classname: "scar" }];
+const atrophyyes = [
+  { value: "Yes", name: "Atrophy", classname: "scar", txtname: "Atrophytxt" },
+];
 // Ecchymosis
 const ecchymosisno = [{ value: "No", classname: "scar", name: "ecchymosis" }];
 const ecchymosisyesreset = [{ name: "ecchymosis" }];
-const ecchymosisyes = [{ value: "Yes", name: "ecchymosis", classname: "scar" }];
+const ecchymosisyes = [
+  {
+    value: "Yes",
+    name: "ecchymosis",
+    classname: "scar",
+    txtname: "ecchymosistxt",
+  },
+];
 // Symptom Magnification
 const symptomno = [{ value: "No", classname: "scar", name: "Symptom" }];
 const symptomreset = [{ name: "Symptom" }];
-const symptomyes = [{ value: "Yes", name: "Symptom", classname: "scar" }];
+const symptomyes = [
+  { value: "Yes", name: "Symptom", classname: "scar", txtname: "Symptomtxt" },
+];
 // Chest Expansion
 const cexpansion = [
   { name: "ChestExpansion", value: "Not-Equal", classname: "scar" },
@@ -282,7 +331,9 @@ const sidevalues = [
 ];
 const sidereset = [{ name: "sensationSidevalue" }];
 const sidesv = [{ name: "sensationD" }];
-const other9 = [{ name: "sensationD", otherclassname: "scar" }];
+const other9 = [
+  { name: "sensationD", otherclassname: "scar", txtname: "SensationDtxt" },
+];
 const decreasedreset = [
   { value: "Reset", name: "sensationD", classname: "scar" },
 ];
@@ -310,17 +361,26 @@ const mstrengthnpreason = [
   { value: "Brace", classname: "scar", name: "sensationNperform" },
 ];
 const mstrengthnpother = [
-  { name: "sensationNperform", otherclassname: "scar" },
+  {
+    name: "sensationNperform",
+    otherclassname: "scar",
+    txtname: "Sensation nperformtxt",
+  },
 ];
 const mstrengthnpreasonreset = [{ name: "sensationNperform" }];
 const mstrengthnotpform = [{ classn: "as" }];
 // Add Details
-const addetails = [
-  { name: "Adddetails", value: "No", classname: "scar" },
-  { name: "Adddetails", value: "Yes", classname: "scar" },
-];
-const addetailsreset = [{ name: "Adddetails" }];
 
+const addetails = [
+  {
+    value: "Yes",
+    classname: "scar",
+    name: "AddDetails",
+    txtname: "AddDetailstxt",
+  },
+];
+const addetailsreset = [{ name: "Symptom" }];
+const addetailsno = [{ value: "No", name: "AddDetails", classname: "scar" }];
 export const Thoracicspine = () => (
   <ThoracicSpine
     thoracic={thoracic}
@@ -351,7 +411,6 @@ export const Thoracicspine = () => (
     tstenderclassification={tstenderclassification}
     cother={cother}
     creset={creset}
-    clevel={clevel}
     position={position}
     pother={pother}
     preset={preset}
@@ -371,7 +430,6 @@ export const Thoracicspine = () => (
     tsslevelother={tsslevelother}
     tssinput2={tssinput2}
     sindreset={sindreset}
-    spasmlevel={spasmlevel}
     spasmpositionother={spasmpositionother}
     spasmpreset={spasmpreset}
     spasmposition={spasmposition}
@@ -415,6 +473,7 @@ export const Thoracicspine = () => (
     mstrengthnotpform={mstrengthnotpform}
     addetails={addetails}
     addetailsreset={addetailsreset}
+    addetailsno={addetailsno}
     atrophyyes={atrophyyes}
     atrophyno={atrophyno}
     atrophyyesreset={atrophyyesreset}

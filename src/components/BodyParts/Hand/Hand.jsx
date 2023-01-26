@@ -138,7 +138,7 @@ function Hand({
       <div>
         <h2>Examination</h2>
         <span>
-          <RadioButton InputArray={rhexam} />
+          <RadioButton inputarray={rhexam} />s
           <NotPerformed
             notperform={rhexamnperform}
             exam1reset={rhexamnpreset}

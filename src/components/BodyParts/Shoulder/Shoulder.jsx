@@ -167,7 +167,7 @@ function Shoulder({
           aspect={rsaspect}
           aspectother={rsaspectother}
           aspectreset={rsaspectreset}
-          sppearance={rsappearance}
+          appearance={rsappearance}
           appearancereset={rsappearancereset}
           appearanceother={rsappearanceother}
           status={rsstatus}

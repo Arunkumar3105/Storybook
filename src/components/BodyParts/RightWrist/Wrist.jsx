@@ -223,7 +223,7 @@ function Wrist({
         <div style={{ marginLeft: "25px", display: "flex" }}>
           <CheckBox inputarray1={taspect} />
           <Others other={taspectother} />
-          <Reset1 Resetall={taspectreset} />
+          <Reset1 resetall={taspectreset} />
         </div>
       </div>
       <h4 style={{ marginLeft: "25px" }}>ROM</h4>

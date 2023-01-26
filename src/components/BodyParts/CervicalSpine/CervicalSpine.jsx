@@ -192,7 +192,7 @@ function CervicalSpine({
         aspectreset={aspectreset}
       />
       <h2>Examination</h2>
-      <RadioButton InputArray={exam} />
+      <RadioButton inputarray={exam} />
       <NotPerformed
         examreset={examreset1}
         other2={other3}
@@ -362,7 +362,7 @@ function CervicalSpine({
       </div>
       <h4 style={{ marginLeft: "25px" }}>Orthopedic Test</h4>
       <div style={{ marginLeft: "30px" }}>
-        <RadioButton InputArray={orthopedic} />
+        <RadioButton inputarray={orthopedic} />
         <NotPerformed
           other2={other4}
           reason={reason2}

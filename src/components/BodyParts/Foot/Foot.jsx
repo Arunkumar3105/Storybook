@@ -125,7 +125,7 @@ const Foot = ({
       <div>
         <h2>Examination</h2>
         <span>
-          <RadioButton InputArray={rfootexam} />
+          <RadioButton inputarray={rfootexam} />
           <NotPerformed
             notperform={rfexamnperform}
             exam1reset={rfexamnpreset}

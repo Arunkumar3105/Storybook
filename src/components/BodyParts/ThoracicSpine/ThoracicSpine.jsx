@@ -39,7 +39,6 @@ const ThoracicSpine = ({
   tstenderclassification,
   cother,
   creset,
-  clevel,
   position,
   pother,
   preset,
@@ -59,7 +58,6 @@ const ThoracicSpine = ({
   value2,
   resetvalue2,
   individualvalue2,
-  spasmlevel,
 
   spasmposition,
   spasmpositionother,
@@ -104,6 +102,7 @@ const ThoracicSpine = ({
   mstrengthnotpform,
   addetails,
   addetailsreset,
+  addetailsno,
   atrophyyes,
   atrophyno,
   atrophyyesreset,
@@ -138,8 +137,8 @@ const ThoracicSpine = ({
       </span>
       <h2>Examination</h2>
       <span>
-        <span style={{ display: "flex" }}>
-          <RadioButton InputArray={exam} />
+        <span>
+          <RadioButton inputarray={exam} />
           <NotPerformed
             notperform={examnperform}
             exam1reset={examnpreset}
@@ -168,7 +167,6 @@ const ThoracicSpine = ({
           </span>
           <h4>Level</h4>
           <span style={{ display: "flex" }}>
-            <RadioButton inputarray={clevel} /> <br />
             <span style={{ display: "flex" }}>
               <CsLevel
                 level={level2}
@@ -205,7 +203,6 @@ const ThoracicSpine = ({
           </span>
           <h4>Level</h4>
           <span style={{ display: "flex" }}>
-            <RadioButton inputarray={spasmlevel} />
             <CsLevel
               level={level3}
               other={other2}
@@ -228,7 +225,7 @@ const ThoracicSpine = ({
         </div>
       </span>
       <h3>ROM</h3>
-      <span style={{ display: "flex" }}>
+      <span>
         <RadioButton inputarray={tsrom} />
         <NotPerformed
           notperform={tsromnperform}
@@ -321,8 +318,11 @@ const ThoracicSpine = ({
       </span>
       <h3>Add Details</h3>
       <span style={{ display: "flex" }}>
-        <RadioButton inputarray={addetails} />
-        <Reset1 resetall={addetailsreset} />
+        <YesNo
+          suboptimal1={addetails}
+          suboptimal={addetailsno}
+          suboptimalreset={addetailsreset}
+        />
       </span>
     </div>
   );

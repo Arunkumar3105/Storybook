@@ -53,9 +53,15 @@ const side = [
   { value: "Bilateral", name: "side", classname: "scar" },
 ];
 
-const appearanceother = [{ name: "appearance", classname: "scar" }];
-const statusother = [{ name: "status", classname: "scar" }];
-const aspectother = [{ name: "aspect", classname: "scar" }];
+const appearanceother = [
+  { name: "appearance", classname: "scar", txtname: "Appearancetxt" },
+];
+const statusother = [
+  { name: "status", classname: "scar", txtname: "statustxt" },
+];
+const aspectother = [
+  { name: "aspect", classname: "scar", txtname: "Aspecttxt" },
+];
 const exam = [{ value: "Performed", name: "exam", classname: "scar" }];
 const nexam = [
   { value: "Normal", name: "nexam", classname: "scar" },
@@ -76,7 +82,9 @@ const tstatus = [
   { value: "Moderate", name: "tstatus", classname: "scar" },
   { value: "Severe", name: "tstatus", classname: "scar" },
 ];
-const tstatusother = [{ name: "tstatus", classname: "scar" }];
+const tstatusother = [
+  { name: "tstatus", classname: "scar", txtname: "Tstaustxt" },
+];
 const level = [
   { value: "C1" },
   { value: "C2" },
@@ -86,7 +94,7 @@ const level = [
   { value: "C6" },
   { value: "C7" },
 ];
-const other = [{ name: "csalllevel" }];
+const other = [{ name: "csalllevel", txtname: "CSleveltxt" }];
 const values2 = [{ value: "C1-C7", name: "csalllevel" }];
 const resetvalue2 = [{ name: "csalllevel" }];
 const individualvalue2 = [
@@ -99,7 +107,9 @@ const tposition = [
   { value: "Occipital", name: "tposition", classname: "scar" },
   { value: "Scapular", name: "tposition", classname: "scar" },
 ];
-const tpositionother = [{ name: "tposition", classname: "scar" }];
+const tpositionother = [
+  { name: "tposition", classname: "scar", txtname: "Tpositiontxt" },
+];
 const tside = [
   { value: "Right", name: "tside", classname: "scar" },
   { value: "Left", name: "tside", classname: "scar" },
@@ -115,7 +125,9 @@ const sstatus = [
   { value: "Moderate", name: "sstatus", classname: "scar" },
   { value: "Severe", name: "sstatus", classname: "scar" },
 ];
-const sstatusother = [{ name: "sstatus", classname: "scar" }];
+const sstatusother = [
+  { name: "sstatus", classname: "scar", txtname: "Sstaustxt" },
+];
 const level1 = [
   { value: "C1" },
   { value: "C2" },
@@ -125,7 +137,7 @@ const level1 = [
   { value: "C6" },
   { value: "C7" },
 ];
-const other1 = [{ name: "csalllevel" }];
+const other1 = [{ name: "csalllevel", txtname: "Csleveltxt" }];
 const values1 = [{ value: "C1-C7", name: "csalllevel" }];
 const resetvalues1 = [{ name: "csalllevel" }];
 const individualvalues = [{ value: "Individual Dermatome" }];
@@ -136,7 +148,9 @@ const sposition = [
   { value: "Occipital", name: "sposition", classname: "scar" },
   { value: "Scapular", name: "sposition", classname: "scar" },
 ];
-const spositionother = [{ name: "sposition", classname: "scar" }];
+const spositionother = [
+  { name: "sposition", classname: "scar", txtname: "Spositiontxt" },
+];
 const sside = [
   { value: "Right", name: "sside", classname: "scar" },
   { value: "Left", name: "sside", classname: "scar" },
@@ -177,7 +191,7 @@ const romreset = [{ name: "rom" }];
 const romselfreset = [{ name: "romself" }];
 const rompainreset = [{ name: "rompain" }];
 // notperformed for rom
-const other2 = [{ classname: "romreason" }];
+const other2 = [{ classname: "romreason", txtname: "romreasontxt" }];
 const reason = [
   { value: "surgery", name: "romreason", classname: "scar" },
   { value: "Complaint of pain", name: "romreason", classname: "exam1" },
@@ -190,32 +204,48 @@ const exam1reset = [{ name: "rom" }];
 const notperform = [{ value: "Not-Performed", name: "rom", classname: "exam" }];
 //suboptimal
 const suboptimal = [{ value: "No", name: "suboptimal", classname: "scar" }];
-const suboptimal1 = [{ value: "Yes", name: "suboptimal", classname: "scar" }];
+const suboptimal1 = [
+  {
+    value: "Yes",
+    name: "suboptimal",
+    classname: "scar",
+    txtname: "Soptimaltxt",
+  },
+];
 const suboptimalreset = [{ name: "suboptimal" }];
 //Atrophy
 const atrophy = [{ value: "No", name: "atrophy", classname: "scar" }];
-const atrophy1 = [{ value: "Yes", name: "atrophy", classname: "scar" }];
+const atrophy1 = [
+  { value: "Yes", name: "atrophy", classname: "scar", txtname: "Atrophytxt" },
+];
 const atrophyreset = [{ name: "atrophy" }];
 //Echymosis Pain Scale
 const echymosis = [{ value: "No", name: "echymosispscale", classname: "scar" }];
 const echymosis1 = [
-  { value: "Yes", name: "echymosispscale", classname: "scar" },
+  {
+    value: "Yes",
+    name: "echymosispscale",
+    classname: "scar",
+    txtname: "echymosispscaletxt",
+  },
 ];
 const echymosisreset = [{ name: "echymosispscale" }];
 //shoulder compression
 const shoulder = [{ value: "No", name: "shoulder", classname: "scar" }];
-const shoulder1 = [{ value: "Yes", name: "shoulder", classname: "scar" }];
+const shoulder1 = [
+  { value: "Yes", name: "shoulder", classname: "scar", txtname: "shouldertxt" },
+];
 const shoulderreset = [{ name: "shoulder" }];
 //symptommagnification
 const symptommagnification = [
   { value: "No", name: "symptom", classname: "scar" },
 ];
 const symptommagnification1 = [
-  { value: "Yes", name: "symptom", classname: "scar" },
+  { value: "Yes", name: "symptom", classname: "scar", txtname: "symptomtxt" },
 ];
 const symptomreset = [{ name: "symptom" }];
 //
-const other3 = [{ classname: "examreason" }];
+const other3 = [{ classname: "examreason", txtname: "examreasontxt" }];
 const reason1 = [
   { value: "surgery", name: "examreason", classname: "scar" },
   { value: "Complaint of pain", name: "examreason", classname: "exam1" },
@@ -232,7 +262,7 @@ const orthopedic = [
   { value: "Performed", name: "orthopedic", classname: "scar" },
 ];
 //
-const other4 = [{ classname: "orthopedic" }];
+const other4 = [{ classname: "orthopedic", txtname: "orthopedictxt" }];
 const reason2 = [
   { value: "surgery", name: "orthopedicreason", classname: "scar" },
   { value: "Complaint of pain", name: "orthopedicreason", classname: "exam1" },
@@ -256,7 +286,7 @@ const negativepositive1 = [
   { value: "Positive", name: "hoffman", classname: "scar" },
 ];
 //hoffman reason for not performed
-const other5 = [{ classname: "hoffmanreason" }];
+const other5 = [{ classname: "hoffmanreason", txtname: "hoffmanreasontxt" }];
 const reason3 = [
   { value: "surgery", name: "hoffmanreason", classname: "scar" },
   { value: "Complaint of pain", name: "hoffmanreason", classname: "exam1" },
@@ -270,7 +300,7 @@ const notperform3 = [
 const examreset3 = [{ name: "hoffmanreason" }];
 const exam1reset3 = [{ name: "hoffman" }];
 //spurling
-const other6 = [{ classname: "spurlingreason" }];
+const other6 = [{ classname: "spurlingreason", txtname: "spurlingreasontxt" }];
 const reason4 = [
   { value: "surgery", name: "spurlingreason", classname: "scar" },
   { value: "Complaint of pain", name: "spurlingreason", classname: "exam1" },
@@ -290,7 +320,9 @@ const negativepositive11 = [
   { value: "Positive", name: "spurling", classname: "scar" },
 ];
 //compression test
-const other7 = [{ classname: "compressionreason" }];
+const other7 = [
+  { classname: "compressionreason", txtname: "compressionreasontxt" },
+];
 const reason5 = [
   { value: "surgery", name: "compressionreason", classname: "scar" },
   { value: "Complaint of pain", name: "compressionreason", classname: "exam1" },
@@ -318,7 +350,7 @@ const neurological = [
   { value: "Performed", name: "neuroexam", classname: "scar" },
 ];
 //not performed for neuroexam
-const other8 = [{ classname: "neuroreason" }];
+const other8 = [{ classname: "neuroreason", txtname: "neuroreasontxt" }];
 const reason6 = [
   { value: "surgery", name: "neuroreason", classname: "scar" },
   { value: "Complaint of pain", name: "neuroreason", classname: "exam1" },
@@ -355,7 +387,7 @@ const sidevalues = [
 ];
 const sidesreset = [{ value: "Reset", name: "Sidevalue", classname: "scar" }];
 const sidesv = [{ name: "Side" }];
-const other9 = [{ classname: "Sidevalue" }];
+const other9 = [{ classname: "Sidevalue", txtname: "Sidevaluetxt" }];
 const decreasedreset = [
   { value: "Reset", name: "Sidevalue", classname: "scar" },
 ];
@@ -383,7 +415,7 @@ const decreasedreset = [
 //   { value: "Reset", name: "Sidevalue1", classname: "scar" },
 // ];
 //not performed for muscle strength
-const other11 = [{ classname: "neuroreason" }];
+const other11 = [{ classname: "neuroreason", txtname: "neuroreasontxt" }];
 const reason7 = [
   { value: "surgery", name: "neuroreason", classname: "scar" },
   { value: "Complaint of pain", name: "neuroreason", classname: "exam1" },
@@ -406,7 +438,9 @@ const sensation = [
   { value: "Decreased", classname: "scar", name: "sensation" },
 ];
 //notperformed for sensation
-const other12 = [{ classname: "sensationreason" }];
+const other12 = [
+  { classname: "sensationreason", txtname: "sensationreasontxt" },
+];
 const reason8 = [
   { value: "surgery", name: "sensationreason", classname: "scar" },
   { value: "Complaint of pain", name: "sensationreason", classname: "exam1" },
@@ -432,7 +466,9 @@ const reflexes = [
 const resetreflex = [{ name: "reflexes" }];
 //adddetails
 const adddetails = [{ value: "No", name: "Add", classname: "scar" }];
-const adddetails1 = [{ value: "Yes", name: "Add", classname: "scar" }];
+const adddetails1 = [
+  { value: "Yes", name: "Add", classname: "scar", txtname: "Adddetailstxt" },
+];
 const adddetailsreset = [{ name: "Add" }];
 const reflexonevalue = [
   { value: "Equal", classname: "scar", name: "Refone" },

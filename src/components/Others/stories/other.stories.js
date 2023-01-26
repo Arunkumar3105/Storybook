@@ -6,5 +6,5 @@ export default {
   component: Others,
 };
 
-const other = [{ name: "csalllevel" }];
+const other = [{ name: "csalllevel", txtname: "Csleveltxt" }];
 export const Other = () => <Others other={other} />;

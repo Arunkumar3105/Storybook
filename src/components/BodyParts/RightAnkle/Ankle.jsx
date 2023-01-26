@@ -152,7 +152,7 @@ function Ankle({
       <h3 style={{ marginLeft: "15px" }}>Normal Exam</h3>
       <div style={{ marginLeft: "25px" }}>
         <RadioButton inputarray={nexam} />
-        <PainScaleButton painScale={nexampainscale} />
+        <PainScaleButton painscale={nexampainscale} />
         <Reset1 resetall={nexamreset} />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Findings</h4>
@@ -261,7 +261,7 @@ function Ankle({
         <YesNo
           suboptimal={suboptimaleffort}
           suboptimal1={suboptimaleffort1}
-          Suboptimalreset={suboptimaleffortreset}
+          suboptimalreset={suboptimaleffortreset}
         />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Atrophy</h4>
@@ -282,7 +282,7 @@ function Ankle({
       </div>
       <h4 style={{ marginLeft: "25px" }}>Orthopedic Tests</h4>
       <div style={{ marginLeft: "30px" }}>
-        <RadioButton InputArray={orthopedic} />
+        <RadioButton inputarray={orthopedic} />
         <NotPerformed
           examreset={examreset2}
           exam1reset={exam1reset2}

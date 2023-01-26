@@ -8,23 +8,31 @@ function YesNo({ suboptimal, suboptimalreset, suboptimal1 }) {
     <div>
       <RadioButton inputarray={suboptimal} />
       {suboptimal1.map((value, key) => (
-        <span
-          key={key}
-          className={value.classname}
-          style={{ marginRight: "10px" }}
-        >
-          <label>
-            <input
-              type="radio"
-              name={value.name}
-              onClick={() => setsuboptimals(true)}
-              id="status"
-            />
-            <span>{value.value}</span>
-          </label>
+        <span>
+          <span
+            key={key}
+            className={value.classname}
+            style={{ marginRight: "10px" }}
+          >
+            <label>
+              <input
+                type="radio"
+                name={value.name}
+                onClick={() => setsuboptimals(true)}
+                id="status"
+              />
+              <span>{value.value}</span>
+            </label>
+          </span>
+
+          <span>
+            {suboptimals ? (
+              <input type="text" name={value.txtname} className="size" />
+            ) : null}
+          </span>
         </span>
       ))}
-      {suboptimals ? <input type="text" className="size" /> : null}
+
       <Reset1 resetall={suboptimalreset} />
     </div>
   );

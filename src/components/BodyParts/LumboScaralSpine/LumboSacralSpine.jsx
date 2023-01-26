@@ -204,7 +204,7 @@ const LumboSacralSpine = ({
       <div>
         <h2>Examination</h2>
         <div style={{ display: "flex" }}>
-          <RadioButton InputArray={examvalue} />
+          <RadioButton inputarray={examvalue} />
           <div>
             <NotPerformed
               notperform={examnpvalue}
@@ -219,7 +219,7 @@ const LumboSacralSpine = ({
           <h2>Normal Exam</h2>
           <div style={{ display: "flex" }}>
             <RadioButton inputarray={nexamvalue} />
-            <PainScaleButton painScale={nexampainscale} />
+            <PainScaleButton painscale={nexampainscale} />
             <Reset1 resetall={nexamreset} />
           </div>
           <h3>Alignment</h3>
@@ -413,7 +413,7 @@ const LumboSacralSpine = ({
           <h3>Neurological Examination</h3>
           <div>
             <span>
-              <RadioButton InputArray={neuroexam} />
+              <RadioButton inputarray={neuroexam} />
               <NotPerformed
                 notperform={nexamnpvalue}
                 exam1reset={nexamnpreset}

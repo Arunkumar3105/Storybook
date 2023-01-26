@@ -3,7 +3,7 @@ import ScarVariation1 from "../../Scar/ScarVariation1";
 import RadioButton from "../../RadioButton/RadioButton";
 import Reset1 from "../../Reset1/Reset1";
 import CheckBox from "../../CheckboxButton/CheckBox";
-import Others from "../../Others/Others";
+// import Others from "../../Others/Others";
 import { Other } from "../../../button1/scarvariation1.stories";
 import NotPerformed from "../../Not-perfomed/NotPerformed";
 import YesNo from "../../YesNo/YesNo";
@@ -149,7 +149,7 @@ function Chest({
           reflexsreset={reflexsreset}
           reflexsvalue={reflexsvalue}
           reflex={reflex1}
-          Zeroreset={zeroreset}
+          zeroreset={zeroreset}
         />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Crepitus Sternum</h4>
