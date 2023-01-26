@@ -3,21 +3,21 @@ export default {
   title: "Zero/O",
   components: Zero,
 };
-const Reflex = [{ name: "Zero", value: "0" }];
-const reflexSvalue = [
+const reflex = [{ name: "Zero", value: "0" }];
+const reflexsvalue = [
   { value: "Right", classname: "scar", name: "Sidevalue" },
   { value: "Left", classname: "scar", name: "Sidevalue" },
   { value: "Bilateral", classname: "scar", name: "Sidevalue" },
 ];
-const ReflexSreset = [{ name: "Sidevalue" }];
-const Reflexside = [{ name: "Side" }];
-const Zeroreset = [{ name: "Zero" }];
+const reflexsreset = [{ name: "Sidevalue" }];
+const reflexside = [{ name: "Side" }];
+const zeroreset = [{ name: "Zero" }];
 export const ReflexZero = () => (
   <Zero
-    Reflex={Reflex}
-    Reflexside={Reflexside}
-    ReflexSreset={ReflexSreset}
-    reflexSvalue={reflexSvalue}
-    Zeroreset={Zeroreset}
+    reflex={reflex}
+    reflexside={reflexside}
+    reflexsreset={reflexsreset}
+    reflexsvalue={reflexsvalue}
+    zeroreset={zeroreset}
   />
 );

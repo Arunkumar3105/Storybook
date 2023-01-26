@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Reset1 from "../Reset1/Reset1";
 import Sides from "../Sides/Sides";
 
-function Zero({ Reflex, Reflexside, reflexSvalue, ReflexSreset, Zeroreset }) {
+function Zero({ reflex, reflexside, reflexsvalue, reflexsreset, zeroreset }) {
   const [reflexZero, setReflexZero] = useState(false);
   return (
     <span>
-      {Reflex.map((value) => (
+      {reflex.map((value) => (
         <span className="scar">
           <label>
             <input
@@ -18,14 +18,14 @@ function Zero({ Reflex, Reflexside, reflexSvalue, ReflexSreset, Zeroreset }) {
           </label>
         </span>
       ))}
-      <Reset1 Resetall={Zeroreset} />
+      <Reset1 resetall={zeroreset} />
       <br />
       <br />
       {reflexZero ? (
         <Sides
-          Sidesv={Reflexside}
-          Sidevalues={reflexSvalue}
-          Sidereset={ReflexSreset}
+          sidesv={reflexside}
+          sidevalues={reflexsvalue}
+          sidereset={reflexsreset}
         />
       ) : null}
     </span>
