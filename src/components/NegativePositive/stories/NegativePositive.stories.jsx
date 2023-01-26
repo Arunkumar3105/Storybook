@@ -4,16 +4,16 @@ export default {
   title: "NegativePositive/NegativePositveButton",
   component: NegativePositive,
 };
-const Negativepositive = [
+const negativepositive = [
   { value: "Negative", name: "Hoffman", classname: "scar" },
 ];
-const Negativepositive1 = [
+const negativepositive1 = [
   { value: "Positive", name: "Hoffman", classname: "scar" },
 ];
 
 export const NegativePositivebutton = () => (
   <NegativePositive
-    Negativepositive={Negativepositive}
-    Negativepositive1={Negativepositive1}
+    negativepositive={negativepositive}
+    negativepositive1={negativepositive1}
   />
 );

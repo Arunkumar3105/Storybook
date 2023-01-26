@@ -3,7 +3,7 @@ import Decreased from "../Decreased";
 export default {
   title: "Decreased/Decreasedbutton",
 };
-const DecreasedButton = [
+const decreasedbutton = [
   { value: "5/5", name: "decreased", classname: "scar" },
   { value: "Decreased", name: "decreased", classname: "scar" },
 ];
@@ -15,21 +15,21 @@ const strength = [
   { value: "Interossei", classname: "scar" },
   { value: "Triceps", classname: "scar" },
 ];
-const Sidevalues = [
+const sidevalues = [
   { value: "Right", classname: "scar", name: "Sidevalue" },
   { value: "Left", classname: "scar", name: "Sidevalue" },
   { value: "Bilateral", classname: "scar", name: "Sidevalue" },
 ];
-const Sidereset = [
+const sidereset = [
   { value: "Reset", name: "Sidevalue", classname: "scarradio" },
 ];
-const Sidesv = [{ name: "Side" }];
+const sidesv = [{ name: "Side" }];
 const other9 = [{ classname: "csalllevel" }];
-const Decreasedreset = [
+const decreasedreset = [
   { value: "Reset", name: "Sidevalue", classname: "scarradio" },
 ];
 const other11 = [{ classname: "neuroreason" }];
-const Reason7 = [
+const reason7 = [
   { value: "surgery", name: "neuroreason", classname: "scar" },
   { value: "Complaint of pain", name: "neuroreason", classname: "exam1" },
   { value: "Non-cooperation", name: "neuroreason", classname: "exam1" },
@@ -40,24 +40,24 @@ const Reason7 = [
   },
   { value: "Brace", name: "neuroreason", classname: "scar" },
 ];
-const Notperform7 = [
+const notperform7 = [
   { value: "Not-Performed", name: "neuroexam", classname: "exam" },
 ];
 const examreset7 = [{ name: "neuroreason" }];
 const exam1reset7 = [{ name: "neuroexam" }];
 export const Decreasedbuttons = () => (
   <Decreased
-    DecreasedButton={DecreasedButton}
+    decreasedbutton={decreasedbutton}
     strength={strength}
-    Sidevalues={Sidevalues}
-    Sidereset={Sidereset}
-    Sidesv={Sidesv}
+    sidevalues={sidevalues}
+    sidereset={sidereset}
+    sidesv={sidesv}
     other9={other9}
-    Decreasedreset={Decreasedreset}
+    decreasedreset={decreasedreset}
     exam1reset7={exam1reset7}
     examreset7={examreset7}
-    Notperform7={Notperform7}
-    Reason7={Reason7}
+    notperform7={notperform7}
+    reason7={reason7}
     other11={other11}
   />
 );

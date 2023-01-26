@@ -4,5 +4,5 @@ export default {
   title: "PainScale/Pscale",
   component: PainScaleButton,
 };
-const painScale = [{ name: "pscale" }];
-export const Painscalebutton = () => <PainScaleButton painScale={painScale} />;
+const painscale = [{ name: "pscale" }];
+export const Painscalebutton = () => <PainScaleButton painscale={painscale} />;

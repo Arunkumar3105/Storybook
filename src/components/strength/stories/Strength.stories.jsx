@@ -3,12 +3,12 @@ export default{
     title:"Strength/StrengthButton",
     component:Strength
 }
-const DecreasedButton = [
+const decreasedbutton = [
     { value: "5/5", name: "decreased", classname: "scar" },
     { value: "Decreased", name: "decreased", classname: "scar" },
   ];
   const strength = [
-    { value: "Biceps", classname: "scar" },
+    { value: "Biceps", classname:  "scar" },
     { value: "Triceps", classname: "scar" },
     { value: "Wrist Extension", classname: "exam" },
     { value: "Grip", classname: "scar" },
@@ -17,11 +17,11 @@ const DecreasedButton = [
   ];
 
   const other9 = [{ classname: "csalllevel" }];
-  const Decreasedreset = [
+  const decreasedreset = [
     { value: "Reset", name: "Sidevalue", classname: "scarradio" },
   ];
   const other11 = [{ classname: "neuroreason" }];
-  const Reason7 = [
+  const reason7 = [
     { value: "surgery", name: "neuroreason", classname: "scar" },
     { value: "Complaint of pain", name: "neuroreason", classname: "exam1" },
     { value: "Non-cooperation", name: "neuroreason", classname: "exam1" },
@@ -32,22 +32,22 @@ const DecreasedButton = [
     },
     { value: "Brace", name: "neuroreason", classname: "scar" },
   ];
-  const Notperform7 = [
+  const notperform7 = [
     { value: "Not-Performed", name: "neuroexam", classname: "exam" },
   ];
   const examreset7 = [{ name: "neuroreason" }];
   const exam1reset7 = [{ name: "neuroexam" }];
   export const StrengthButtons = () => (
     <Strength
-      DecreasedButton={DecreasedButton}
+      decreasedbutton={decreasedbutton}
       strength={strength}
       
       other9={other9}
-      Decreasedreset={Decreasedreset}
+      decreasedreset={decreasedreset}
       exam1reset7={exam1reset7}
       examreset7={examreset7}
-      Notperform7={Notperform7}
-      Reason7={Reason7}
+      notperform7={notperform7}
+      reason7={reason7}
       other11={other11}
     />
   );

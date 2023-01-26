@@ -4,7 +4,7 @@ function StrengthText({ textbox, textbox1 }) {
   const [strengthtext, setstrengthtext] = useState(false);
   return (
     <span>
-      <RadioButton InputArray={textbox} />
+      <RadioButton inputarray={textbox} />
       {textbox1.map((values, key) => (
         <span key={key} className={values.classname}>
           <label>

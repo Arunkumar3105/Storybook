@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-const PainScaleButton = ({ painScale }) => {
+const PainScaleButton = ({ painscale }) => {
   const [painScale1, setPainScale2] = useState(false);
   return (
     <span>
-      {painScale.map((value) => (
+      {painscale.map((value) => (
         <span className="scar">
           <label>
             <input

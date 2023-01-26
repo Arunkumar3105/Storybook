@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import CheckBox from "../CheckboxButton/CheckBox";
 import Sides from "../Sides/Sides";
 
-function OnePlus({ Reflexonevalue, Reflex, Sidesv, Sidereset, Sidevalues }) {
+function OnePlus({ reflexonevalue, reflex, sidesv, sidereset, sidevalues }) {
   const [Rone, setRone] = useState(false);
   return (
     <span>
-      {Reflex.map((value) => (
+      {reflex.map((value) => (
         <span className="scar">
           <label>
             <input
@@ -22,11 +22,11 @@ function OnePlus({ Reflexonevalue, Reflex, Sidesv, Sidereset, Sidevalues }) {
       <br />
       {Rone ? (
         <span>
-          <CheckBox InputArray1={Reflexonevalue} />
+          <CheckBox inputarray1={reflexonevalue} />
           <Sides
-            Sidesv={Sidesv}
-            Sidereset={Sidereset}
-            Sidevalues={Sidevalues}
+            sidesv={sidesv}
+            sidereset={sidereset}
+            sidevalues={sidevalues}
           />
         </span>
       ) : null}

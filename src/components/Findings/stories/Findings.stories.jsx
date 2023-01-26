@@ -4,44 +4,44 @@ export default {
   title: "Finding/Finding",
   component: Findings,
 };
-const Fyes = [{ name: "Findyes" }];
-const Fno = [{ name: "Findno" }];
-const Swelling = [{ name: "finding" }];
-const Erythema = [{ name: "Erythema" }];
-const Effusion = [{ name: "Effusion" }];
-const Redness = [{ name: "Redness" }];
-const Edema = [{ name: "Edema" }];
-const Deformity = [{ name: "Deformity" }];
-const Ecchymosis = [{ name: "Ecchymosis" }];
-const FNoother = [{ name: "FindNother", classname: "scar" }];
+const fyes = [{ name: "Findyes" }];
+const fno = [{ name: "Findno" }];
+const swelling = [{ name: "finding" }];
+const erythema = [{ name: "Erythema" }];
+const effusion = [{ name: "Effusion" }];
+const redness = [{ name: "Redness" }];
+const edema = [{ name: "Edema" }];
+const deformity = [{ name: "Deformity" }];
+const ecchymosis = [{ name: "Ecchymosis" }];
+const fnoother = [{ name: "FindNother", classname: "scar" }];
 
-const Swelling1 = [{ name: "finding" }];
-const Erythema1 = [{ name: "Erythema" }];
-const Effusion1 = [{ name: "Effusion" }];
-const Redness1 = [{ name: "Redness" }];
-const Edema1 = [{ name: "Edema" }];
-const Deformity1 = [{ name: "Deformity" }];
-const Ecchymosis1 = [{ name: "Ecchymosis" }];
-const FyesOther = [{ name: "FindNother", classname: "scar" }];
+const swelling1 = [{ name: "finding" }];
+const erythema1 = [{ name: "Erythema" }];
+const effusion1 = [{ name: "Effusion" }];
+const redness1 = [{ name: "Redness" }];
+const edema1 = [{ name: "Edema" }];
+const deformity1 = [{ name: "Deformity" }];
+const ecchymosis1 = [{ name: "Ecchymosis" }];
+const fyesother = [{ name: "FindNother", classname: "scar" }];
 export const RsFindings = () => (
   <Findings
-    Swelling={Swelling}
-    Erythema={Erythema}
-    Effusion={Effusion}
-    Redness={Redness}
-    Edema={Edema}
-    Ecchymosis={Ecchymosis}
-    Deformity={Deformity}
-    Swelling1={Swelling1}
-    Erythema1={Erythema1}
-    Effusion1={Effusion1}
-    Redness1={Redness1}
-    Edema1={Edema1}
-    Ecchymosis1={Ecchymosis1}
-    Deformity1={Deformity1}
-    Fyes={Fyes}
-    Fno={Fno}
-    FNoother={FNoother}
-    FyesOther={FyesOther}
+    swelling={swelling}
+    erythema={erythema}
+    effusion={effusion}
+    redness={redness}
+    edema={edema}
+    ecchymosis={ecchymosis}
+    deformity={deformity}
+    swelling1={swelling1}
+    erythema1={erythema1}
+    effusion1={effusion1}
+    redness1={redness1}
+    edema1={edema1}
+    ecchymosis1={ecchymosis1}
+    eeformity1={deformity1}
+    fyes={fyes}
+    fno={fno}
+    fnoother={fnoother}
+    fyesother={fyesother}
   />
 );

@@ -5,5 +5,5 @@ export default {
     component: RadioButton
 
 }
-const InputArray = [{ "value": "No", "name": "csscar", "classname": "scar" }, { "value": "Yes", "name": "csscar", "classname": "scar" }]
-export const RadioButtons = () => <RadioButton InputArray={InputArray} />
+const inputarray = [{ "value": "No", "name": "csscar", "classname": "scar" }, { "value": "Yes", "name": "csscar", "classname": "scar" }]
+export const RadioButtons = () => <RadioButton inputarray={inputarray} />

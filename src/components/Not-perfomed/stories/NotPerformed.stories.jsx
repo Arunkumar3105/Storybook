@@ -6,22 +6,22 @@ export default {
 };
 
 const other2 = [{ name: "examreason" }];
-const Reason = [
+const reason = [
   { value: "surgery", name: "examreason", classname: "scar" },
   { value: "Complaint of pain", name: "examreason", classname: "exam1" },
   { value: "Non-cooperation", name: "examreason", classname: "exam1" },
   { value: "Not wish to perform", name: "examreason", classname: "exam1" },
   { value: "Brace", name: "examreason", classname: "scar" },
 ];
-const Notperform = [{ value: "Not-Performed", name: "rom", classname: "exam" }];
+const notperform = [{ value: "Not-Performed", name: "rom", classname: "exam" }];
 const examreset = [{ name: "examreason" }];
 const exam1reset = [{ name: "rom" }];
 export const NotPerformedbutton = () => (
   <NotPerformed
     other2={other2}
-    Reason={Reason}
+    reason={reason}
     examreset={examreset}
     exam1reset={exam1reset}
-    Notperform={Notperform}
+    notperform={notperform}
   />
 );

@@ -4,13 +4,13 @@ export default {
   title: "YesNo/YesButton",
   component: YesNo,
 };
-const Suboptimal = [{ value: "No", name: "suboptimal", classname: "scar" }];
-const Suboptimal1 = [{ value: "Yes", name: "suboptimal", classname: "scar" }];
-const Suboptimalreset = [{ name: "suboptimal" }];
+const suboptimal = [{ value: "No", name: "suboptimal", classname: "scar" }];
+const suboptimal1 = [{ value: "Yes", name: "suboptimal", classname: "scar" }];
+const suboptimalreset = [{ name: "suboptimal" }];
 export const Yesno = () => ( 
   <YesNo
-    Suboptimal={Suboptimal}
-    Suboptimalreset={Suboptimalreset}
-    Suboptimal1={Suboptimal1}
+    suboptimal={suboptimal}
+    suboptimalreset={suboptimalreset}
+    suboptimal1={suboptimal1}
   />
 );

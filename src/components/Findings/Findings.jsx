@@ -2,44 +2,44 @@ import React, { useState } from "react";
 import Others from "../Others/Others";
 
 function Findings({
-  Fyes,
-  Fno,
-  Swelling,
-  Erythema,
-  Effusion,
-  Ecchymosis,
-  Redness,
-  Edema,
-  Deformity,
-  Swelling1,
-  Erythema1,
-  Effusion1,
-  Ecchymosis1,
-  Redness1,
-  Edema1,
-  Deformity1,
-  FNoother,
-  FyesOther,
+  fyes,
+  fno,
+  swelling,
+  erythema,
+  effusion,
+  ecchymosis,
+  redness,
+  edema,
+  deformity,
+  swelling1,
+  erythema1,
+  effusion1,
+  ecchymosis1,
+  redness1,
+  edema1,
+  deformity1,
+  fnoother,
+  fyesother,
 }) {
   const [findyes, setFindyes] = useState(false);
   const [findno, setFindno] = useState(false);
-  const [swelling, setSwelling] = useState(true);
-  const [erythema, setErythema] = useState(true);
-  const [effusion, setEffusion] = useState(true);
-  const [ecchymosis, setEcchymosis] = useState(true);
-  const [redness, setRedness] = useState(true);
-  const [edema, setEdema] = useState(true);
-  const [deformity, setDeformity] = useState(true);
-  const [swelling1, setSwelling1] = useState(true);
-  const [erythema1, setErythema1] = useState(true);
-  const [effusion1, setEffusion1] = useState(true);
-  const [ecchymosis1, setEcchymosis1] = useState(true);
-  const [redness1, setRedness1] = useState(true);
-  const [edema1, setEdema1] = useState(true);
-  const [deformity1, setDeformity1] = useState(true);
+  const [Swelling, setSwelling] = useState(true);
+  const [Erythema, setErythema] = useState(true);
+  const [Effusion, setEffusion] = useState(true);
+  const [Ecchymosis, setEcchymosis] = useState(true);
+  const [Redness, setRedness] = useState(true);
+  const [Edema, setEdema] = useState(true);
+  const [Deformity, setDeformity] = useState(true);
+  const [Swelling1, setSwelling1] = useState(true);
+  const [Erythema1, setErythema1] = useState(true);
+  const [Effusion1, setEffusion1] = useState(true);
+  const [Ecchymosis1, setEcchymosis1] = useState(true);
+  const [Redness1, setRedness1] = useState(true);
+  const [Edema1, setEdema1] = useState(true);
+  const [Deformity1, setDeformity1] = useState(true);
   return (
     <span>
-      {Fno.map((value) => (
+      {fno.map((value) => (
         <span className="scar">
           <label>
             <input
@@ -51,7 +51,7 @@ function Findings({
           </label>
         </span>
       ))}
-      {Fyes.map((value) => (
+      {fyes.map((value) => (
         <span className="scar">
           <label>
             <input
@@ -96,9 +96,9 @@ function Findings({
         <span>
           <h4>No</h4>
           <div style={{ display: "flex" }}>
-            {swelling1 ? (
+            {Swelling1 ? (
               <>
-                {Swelling.map((value) => (
+                {swelling.map((value) => (
                   <span className="scar">
                     <label>
                       <input
@@ -112,9 +112,9 @@ function Findings({
                 ))}
               </>
             ) : null}
-            {erythema1 ? (
+            {Erythema1 ? (
               <>
-                {Erythema.map((value) => (
+                {erythema.map((value) => (
                   <span className="scar">
                     <label>
                       <input
@@ -128,9 +128,9 @@ function Findings({
                 ))}
               </>
             ) : null}
-            {effusion1 ? (
+            {Effusion1 ? (
               <>
-                {Effusion.map((value) => (
+                {effusion.map((value) => (
                   <span className="scar">
                     <label>
                       <input
@@ -144,9 +144,9 @@ function Findings({
                 ))}
               </>
             ) : null}
-            {ecchymosis1 ? (
+            {Ecchymosis1 ? (
               <>
-                {Ecchymosis.map((value) => (
+                {ecchymosis.map((value) => (
                   <span className="exam1">
                     <label>
                       <input
@@ -160,9 +160,9 @@ function Findings({
                 ))}
               </>
             ) : null}
-            {redness1 ? (
+            {Redness1 ? (
               <>
-                {Redness.map((value) => (
+                {redness.map((value) => (
                   <span className="scar">
                     <label>
                       <input
@@ -176,9 +176,9 @@ function Findings({
                 ))}
               </>
             ) : null}
-            {edema1 ? (
+            {Edema1 ? (
               <>
-                {Edema.map((value) => (
+                {edema.map((value) => (
                   <span className="scar">
                     <label>
                       <input
@@ -192,9 +192,9 @@ function Findings({
                 ))}
               </>
             ) : null}
-            {deformity1 ? (
+            {Deformity1 ? (
               <>
-                {Deformity.map((value) => (
+                {deformity.map((value) => (
                   <span className="scar">
                     <label>
                       <input
@@ -208,7 +208,7 @@ function Findings({
                 ))}
               </>
             ) : null}
-            <Others other={FNoother} />
+            <Others other={fnoother} />
             <span className="reset">
               <label>
                 <input
@@ -235,9 +235,9 @@ function Findings({
         <span>
           <h4>Yes</h4>
           <div style={{ display: "flex" }}>
-            {swelling ? (
+            {Swelling ? (
               <>
-                {Swelling1.map((value) => (
+                {swelling1.map((value) => (
                   <span className="scar">
                     <label>
                       <input
@@ -251,9 +251,9 @@ function Findings({
                 ))}
               </>
             ) : null}
-            {erythema ? (
+            {Erythema ? (
               <>
-                {Erythema1.map((value) => (
+                {erythema1.map((value) => (
                   <span className="scar">
                     <label>
                       <input
@@ -267,9 +267,9 @@ function Findings({
                 ))}
               </>
             ) : null}
-            {effusion ? (
+            {Effusion ? (
               <>
-                {Effusion1.map((value) => (
+                {effusion1.map((value) => (
                   <span className="scar">
                     <label>
                       <input
@@ -283,9 +283,9 @@ function Findings({
                 ))}
               </>
             ) : null}
-            {ecchymosis ? (
+            {Ecchymosis ? (
               <>
-                {Ecchymosis1.map((value) => (
+                {ecchymosis1.map((value) => (
                   <span className="exam1">
                     <label>
                       <input
@@ -299,9 +299,9 @@ function Findings({
                 ))}
               </>
             ) : null}
-            {redness ? (
+            {Redness ? (
               <>
-                {Redness1.map((value) => (
+                {redness1.map((value) => (
                   <span className="scar">
                     <label>
                       <input
@@ -315,9 +315,9 @@ function Findings({
                 ))}
               </>
             ) : null}
-            {edema ? (
+            {Edema ? (
               <>
-                {Edema1.map((value) => (
+                {edema1.map((value) => (
                   <span className="scar">
                     <label>
                       <input
@@ -331,9 +331,9 @@ function Findings({
                 ))}
               </>
             ) : null}
-            {deformity ? (
+            {Deformity ? (
               <>
-                {Deformity1.map((value) => (
+                {deformity1.map((value) => (
                   <span className="scar">
                     <label>
                       <input
@@ -347,7 +347,7 @@ function Findings({
                 ))}
               </>
             ) : null}
-            <Others other={FyesOther} />
+            <Others other={fyesother} />
             <span className="reset">
               <label>
                 <input

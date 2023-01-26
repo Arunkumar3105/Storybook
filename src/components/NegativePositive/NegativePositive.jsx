@@ -2,12 +2,12 @@ import React from "react";
 import RadioButton from "../RadioButton/RadioButton";
 import Reset1 from "../Reset1/Reset1";
 import { useState } from "react";
-function NegativePositive({ Negativepositive, Negativepositive1 }) {
-  const [negativepositive, setnegativepositive] = useState(false);
+function NegativePositive({ negativepositive, negativepositive1 }) {
+  const [negativepositives, setnegativepositives] = useState(false);
   return (
     <span>
-      <RadioButton InputArray={Negativepositive} />
-      {Negativepositive1.map((value, key) => (
+      <RadioButton inputarray={negativepositive} />
+      {negativepositive1.map((value, key) => (
         <span
           key={key}
           className={value.classname}
@@ -17,14 +17,14 @@ function NegativePositive({ Negativepositive, Negativepositive1 }) {
             <input
               type="radio"
               name={value.name}
-              onClick={() => setnegativepositive(true)}
+              onClick={() => setnegativepositives(true)}
               id="status"
             />
             <span>{value.value}</span>
           </label>
         </span>
       ))}
-      {negativepositive ? <input type="text" className="size" /> : null}
+      {negativepositives ? <input type="text" className="size" /> : null}
     </span>
   );
 }
