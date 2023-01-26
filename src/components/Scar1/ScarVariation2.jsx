@@ -23,29 +23,31 @@ function ScarVariation2({
       <RadioButton InputArray={Scar} />
       <Reset1 Resetall={Scarreset} />
       {/* Size */}
-      <h2>Size</h2>
-      &nbsp;&nbsp;
-      <input type="text" className="size" placeholder="size" />
-      {/* status */}
-      <h2>Status</h2>
-      <div style={{ display: "flex" }}>
-        <RadioButton InputArray={Status} />
-        <Others other={StatusOther} />
-        <Reset1 Resetall={Statusreset} />
-      </div>
-      {/* Appearance */}
-      <h2>Appearance</h2>
-      <div style={{ display: "flex" }}>
-        <RadioButton InputArray={Appearance} />
-        <Others other={AppearanceOther} />
-        <Reset1 Resetall={Appearancereset} />
-      </div>
-      {/* Aspect */}
-      <h2>Aspect</h2>
-      <div style={{ display: "flex" }}>
-        <CheckBox InputArray1={aspect} />
-        <Others other={aspectOther} />
-        <Reset1 Resetall={aspectreset} />
+      <div style={{ marginLeft: "20px" }}>
+        <h3 style={{ marginLeft: "15px" }}>Size</h3>
+        &nbsp;&nbsp;
+        <input type="text" className="size" placeholder="size" />
+        {/* status */}
+        <h3 style={{ marginLeft: "15px" }}>Status</h3>
+        <div style={{ display: "flex" }}>
+          <RadioButton InputArray={Status} />
+          <Others other={StatusOther} />
+          <Reset1 Resetall={Statusreset} />
+        </div>
+        {/* Appearance */}
+        <h3 style={{ marginLeft: "15px" }}>Appearance</h3>
+        <div style={{ display: "flex" }}>
+          <RadioButton InputArray={Appearance} />
+          <Others other={AppearanceOther} />
+          <Reset1 Resetall={Appearancereset} />
+        </div>
+        {/* Aspect */}
+        <h3 style={{ marginLeft: "15px" }}>Aspect</h3>
+        <div style={{ display: "flex" }}>
+          <CheckBox InputArray1={aspect} />
+          <Others other={aspectOther} />
+          <Reset1 Resetall={aspectreset} />
+        </div>
       </div>
     </div>
   );
