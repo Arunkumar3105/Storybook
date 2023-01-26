@@ -4,11 +4,11 @@ import RadioButton from "../RadioButton/RadioButton";
 import Reset1 from "../Reset1/Reset1";
 import { useState } from "react";
 
-function NotPerformed({ other2, Reason, examreset, exam1reset, Notperform }) {
+function NotPerformed({ other2, reason, examreset, exam1reset, notperform }) {
   const [notperformed, setnotperformed] = useState(false);
   return (
     <>
-      {Notperform.map((value, key) => (
+      {notperform.map((value, key) => (
         <span key={key} className={value.classname}>
           <label>
             <input
@@ -21,13 +21,13 @@ function NotPerformed({ other2, Reason, examreset, exam1reset, Notperform }) {
           </label>
         </span>
       ))}
-      <Reset1 Resetall={exam1reset} />
+      <Reset1 resetall={exam1reset} />
       <br />
       {notperformed ? (
         <div style={{ display: "flex", marginTop: "20px" }}>
-          <RadioButton InputArray={Reason} />
+          <RadioButton inputarray={reason} />
           <Others other={other2} />
-          <Reset1 Resetall={examreset} />
+          <Reset1 resetall={examreset} />
         </div>
       ) : null}
     </>

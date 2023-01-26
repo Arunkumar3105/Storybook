@@ -4,7 +4,7 @@ export default {
   title: "Fingervalues/Fvalue",
   component: Fingervalue,
 };
-const Finger = [
+const finger = [
   {
     Fname: "All Finger Value",
     value1: "DIP",
@@ -15,4 +15,4 @@ const Finger = [
     vname3: "AllFinger",
   },
 ];
-export const Fvalues = () => <Fingervalue Finger={Finger} />;
+export const Fvalues = () => <Fingervalue finger={finger} />;
