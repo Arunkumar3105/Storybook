@@ -8,25 +8,25 @@ import Reset1 from "../Reset1/Reset1";
 // import  PropTypes from "prop-types"
 function ScarVariation1({
   aspect,
-  Appearance,
-  Side,
-  StatusOther,
-  AppearanceOther,
-  aspectOther,
-  Scar,
-  Status,
-  Scarreset,
-  Appearancereset,
-  Statusreset,
-  Sidereset,
+  appearance,
+  side,
+  statusother,
+  appearanceother,
+  aspectother,
+  scar,
+  status,
+  scarreset,
+  appearancereset,
+  statusreset,
+  sidereset,
   aspectreset,
 }) {
   return (
     <div>
       <h2>Scar</h2>
       <div style={{ marginLeft: "15px" }}>
-        <RadioButton InputArray={Scar} />
-        <Reset1 Resetall={Scarreset} />
+        <RadioButton inputarray={scar} />
+        <Reset1 resetall={scarreset} />
         {/* Size */}
         <div style={{ marginLeft: "20px" }}>
           <h3>Size</h3>
@@ -35,28 +35,28 @@ function ScarVariation1({
           {/* status */}
           <h3>Status</h3>
           <div style={{ display: "flex" }}>
-            <RadioButton InputArray={Status} />
-            <Others other={StatusOther} />
-            <Reset1 Resetall={Statusreset} />
+            <RadioButton inputarray={status} />
+            <Others other={statusother} />
+            <Reset1 resetall={statusreset} />
           </div>
           {/* Appearance */}
           <h3>Appearance</h3>
           <div style={{ display: "flex" }}>
-            <RadioButton InputArray={Appearance} />
-            <Others other={AppearanceOther} />
-            <Reset1 Resetall={Appearancereset} />
+            <RadioButton inputarray={appearance} />
+            <Others other={appearanceother} />
+            <Reset1 resetall={appearancereset} />
           </div>
           {/* Aspect */}
           <h3>Aspect</h3>
           <div style={{ display: "flex" }}>
-            <CheckBox InputArray1={aspect} />
-            <Others other={aspectOther} />
-            <Reset1 Resetall={aspectreset} />
+            <CheckBox inputarray1={aspect} />
+            <Others other={aspectother} />
+            <Reset1 resetall={aspectreset} />
           </div>
           {/* Side */}
           <h3>Side</h3>
-          <RadioButton InputArray={Side} />
-          <Reset1 Resetall={Sidereset} />
+          <RadioButton inputarray={side} />
+          <Reset1 resetall={sidereset} />
         </div>{" "}
       </div>
     </div>

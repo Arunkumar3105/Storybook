@@ -5,23 +5,23 @@ import CheckBox from "../CheckboxButton/CheckBox";
 import Others from "../Others/Others";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 function ScarVariation2({
-  Status,
-  Appearance,
+  status,
+  appearance,
   aspect,
-  Scar,
+  scar,
   aspectreset,
-  Statusreset,
-  Appearancereset,
-  Scarreset,
-  aspectOther,
-  StatusOther,
-  AppearanceOther,
+  statusreset,
+  appearancereset,
+  scarreset,
+  aspectother,
+  statusother,
+  appearanceother,
 }) {
   return (
     <div>
       <h2>Scar</h2>
-      <RadioButton InputArray={Scar} />
-      <Reset1 Resetall={Scarreset} />
+      <RadioButton inputarray={scar} />
+      <Reset1 resetall={scarreset} />
       {/* Size */}
       <div style={{ marginLeft: "20px" }}>
         <h3 style={{ marginLeft: "15px" }}>Size</h3>
@@ -30,23 +30,23 @@ function ScarVariation2({
         {/* status */}
         <h3 style={{ marginLeft: "15px" }}>Status</h3>
         <div style={{ display: "flex" }}>
-          <RadioButton InputArray={Status} />
-          <Others other={StatusOther} />
-          <Reset1 Resetall={Statusreset} />
+          <RadioButton inputarray={status} />
+          <Others other={statusother} />
+          <Reset1 resetall={statusreset} />
         </div>
         {/* Appearance */}
         <h3 style={{ marginLeft: "15px" }}>Appearance</h3>
         <div style={{ display: "flex" }}>
-          <RadioButton InputArray={Appearance} />
-          <Others other={AppearanceOther} />
-          <Reset1 Resetall={Appearancereset} />
+          <RadioButton inputarray={appearance} />
+          <Others other={appearanceother} />
+          <Reset1 resetall={appearancereset} />
         </div>
         {/* Aspect */}
         <h3 style={{ marginLeft: "15px" }}>Aspect</h3>
         <div style={{ display: "flex" }}>
-          <CheckBox InputArray1={aspect} />
-          <Others other={aspectOther} />
-          <Reset1 Resetall={aspectreset} />
+          <CheckBox inputarray1={aspect} />
+          <Others other={aspectother} />
+          <Reset1 resetall={aspectreset} />
         </div>
       </div>
     </div>
