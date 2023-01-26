@@ -1,9 +1,9 @@
 import React from "react"
 import "./CheckBox.css"
-function CheckBox({InputArray1}){
+function CheckBox({inputarray1}){
     return(
         <>
-            {InputArray1.map((value,key)=>(
+            {inputarray1.map((value,key)=>(
         <span key={key} className={value.classname}>
         <label>
     <input type="checkbox" name={value.name} id="aspect"/> 

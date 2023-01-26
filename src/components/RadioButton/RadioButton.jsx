@@ -1,9 +1,9 @@
 import React from "react";
 import "./RadioButton.css";
-function RadioButton({ InputArray }) {
+function RadioButton({ inputarray }) {
   return (
     <span>
-      {InputArray.map((value, key) => (
+      {inputarray.map((value, key) => (
         <span key={key} className={value.classname}>
           <label>
             <input type="radio" name={value.name} id="status" />
