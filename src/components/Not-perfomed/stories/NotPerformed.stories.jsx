@@ -5,7 +5,7 @@ export default {
   component: NotPerformed,
 };
 
-const other2 = [{ classname: "examreason" }];
+const other2 = [{ name: "examreason" }];
 const Reason = [
   { value: "surgery", name: "examreason", classname: "scar" },
   { value: "Complaint of pain", name: "examreason", classname: "exam1" },
@@ -15,7 +15,7 @@ const Reason = [
 ];
 const Notperform = [{ value: "Not-Performed", name: "rom", classname: "exam" }];
 const examreset = [{ name: "examreason" }];
-const exam1reset = [{ name: "exam" }];
+const exam1reset = [{ name: "rom" }];
 export const NotPerformedbutton = () => (
   <NotPerformed
     other2={other2}

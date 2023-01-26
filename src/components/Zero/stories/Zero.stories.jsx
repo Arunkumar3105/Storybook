@@ -3,7 +3,7 @@ export default {
   title: "Zero/O",
   components: Zero,
 };
-const Reflex = [{ name: "Zero" }];
+const Reflex = [{ name: "Zero", value: "0" }];
 const reflexSvalue = [
   { value: "Right", classname: "scar", name: "Sidevalue" },
   { value: "Left", classname: "scar", name: "Sidevalue" },

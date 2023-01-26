@@ -24,37 +24,41 @@ function ScarVariation1({
   return (
     <div>
       <h2>Scar</h2>
-      <RadioButton InputArray={Scar} />
-      <Reset1 Resetall={Scarreset} />
-      {/* Size */}
-      <h2>Size</h2>
-      &nbsp;&nbsp;
-      <input type="text" className="size" placeholder="size" />
-      {/* status */}
-      <h2>Status</h2>
-      <div style={{ display: "flex" }}>
-        <RadioButton InputArray={Status} />
-        <Others other={StatusOther} />
-        <Reset1 Resetall={Statusreset} />
+      <div style={{ marginLeft: "15px" }}>
+        <RadioButton InputArray={Scar} />
+        <Reset1 Resetall={Scarreset} />
+        {/* Size */}
+        <div style={{ marginLeft: "20px" }}>
+          <h3>Size</h3>
+          &nbsp;&nbsp;
+          <input type="text" className="size" placeholder="size" />
+          {/* status */}
+          <h3>Status</h3>
+          <div style={{ display: "flex" }}>
+            <RadioButton InputArray={Status} />
+            <Others other={StatusOther} />
+            <Reset1 Resetall={Statusreset} />
+          </div>
+          {/* Appearance */}
+          <h3>Appearance</h3>
+          <div style={{ display: "flex" }}>
+            <RadioButton InputArray={Appearance} />
+            <Others other={AppearanceOther} />
+            <Reset1 Resetall={Appearancereset} />
+          </div>
+          {/* Aspect */}
+          <h3>Aspect</h3>
+          <div style={{ display: "flex" }}>
+            <CheckBox InputArray1={aspect} />
+            <Others other={aspectOther} />
+            <Reset1 Resetall={aspectreset} />
+          </div>
+          {/* Side */}
+          <h3>Side</h3>
+          <RadioButton InputArray={Side} />
+          <Reset1 Resetall={Sidereset} />
+        </div>{" "}
       </div>
-      {/* Appearance */}
-      <h2>Appearance</h2>
-      <div style={{ display: "flex" }}>
-        <RadioButton InputArray={Appearance} />
-        <Others other={AppearanceOther} />
-        <Reset1 Resetall={Appearancereset} />
-      </div>
-      {/* Aspect */}
-      <h2>Aspect</h2>
-      <div style={{ display: "flex" }}>
-        <CheckBox InputArray1={aspect} />
-        <Others other={aspectOther} />
-        <Reset1 Resetall={aspectreset} />
-      </div>
-      {/* Side */}
-      <h2>Side</h2>
-      <RadioButton InputArray={Side} />
-      <Reset1 Resetall={Sidereset} />
     </div>
   );
 }

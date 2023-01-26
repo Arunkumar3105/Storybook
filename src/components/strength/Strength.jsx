@@ -8,7 +8,7 @@ import NotPerformed from "../Not-perfomed/NotPerformed";
 function Strength({
   DecreasedButton,
   strength,
-  
+
   other9,
   Decreasedreset,
   exam1reset7,
@@ -52,7 +52,7 @@ function Strength({
       {mstrength ? (
         <span style={{ display: "flex" }}>
           <CheckBox InputArray1={strength} />
-         
+
           <Others other={other9} />
           <Reset1 Resetall={Decreasedreset} />
         </span>

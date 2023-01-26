@@ -25,7 +25,10 @@
 
 .scar label input + span {
   color: rgb(10, 9, 9);
-  width: 80px;
+  width: 100%;
+  cellspacing: 0;
+  cellpadding: 0;
+  border: 0;
   font-size: 15px;
   border: 2px solid teal;
   border-radius: 5px;
@@ -60,7 +63,7 @@
 }
 .scar label span {
   text-align: center;
-  padding: 5px 20px;
+  padding: 5px 5px;
   display: inline-block;
 }
 .cslevel label span {

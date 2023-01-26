@@ -14,7 +14,7 @@ function Zero({ Reflex, Reflexside, reflexSvalue, ReflexSreset, Zeroreset }) {
               name={value.name}
               onClick={() => setReflexZero(true)}
             />
-            <span>O</span>
+            <span>{value.value}</span>
           </label>
         </span>
       ))}

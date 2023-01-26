@@ -86,7 +86,6 @@ export const Scarvariation2 = () => (
       aspectOther={aspectOther}
       StatusOther={StatusOther}
       AppearanceOther={AppearanceOther}
-      
     />
   </span>
 );

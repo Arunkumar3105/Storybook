@@ -13,115 +13,120 @@ import NegativePositive from "../../NegativePositive/NegativePositive";
 import Decreased from "../../Decreased/Decreased";
 import OnePlus from "../../Oneplus/OnePlus";
 import Zero from "../../Zero/Zero";
+import PainScaleButton from "../../PainScaleButton/PainScaleButton";
 function CervicalSpine({
   aspect,
-  Appearance,
-  Status,
-  Side,
-  Scar,
-  AppearanceOther,
-  StatusOther,
-  aspectOther,
-  Exam,
-  Nexam,
-  Alignment,
-  Tenderness,
-  Tstatus,
-  TstatusOther,
+  appearance,
+  status,
+  side,
+  scar,
+  appearanceother,
+  statusother,
+  aspectother,
+  exam,
+  nexam,
+  nexampainscale,
+  alignment,
+  tenderness,
+  tstatus,
+  tstatusother,
   level,
   other,
-  Tposition,
-  TpositionOther,
-  Tside,
-  Spasm,
-  Sstatus,
-  SstatusOther,
+  tposition,
+  tpositionother,
+  tside,
+  spasm,
+  sstatus,
+  sstatusother,
   level1,
   other1,
-  Sposition,
-  SpositionOther,
-  Sside,
-  Rom,
-  RomSelf,
-  Rompain,
+  sposition,
+  spositionother,
+  sside,
+  rom,
+  romself,
+  rompain,
 
-  Nexamreset,
-  Alignmentreset,
-  Tendernessreset,
-  Tstatusreset,
-  Tpositionreset,
-  Tsidereset,
-  Spasmreset,
-  Sstatusreset,
-  Spositionreset,
-  Ssidereset,
-  Romreset,
-  Romselfreset,
-  Rompainreset,
-  Scarreset,
-  Appearancereset,
-  Statusreset,
-  Sidereset,
+  nexamreset,
+  alignmentreset,
+  tendernessreset,
+  tstatusreset,
+  tpositionreset,
+  tsidereset,
+  spasmreset,
+  sstatusreset,
+  spositionreset,
+  ssidereset,
+  romreset,
+  romselfreset,
+  rompainreset,
+  scarreset,
+  appearancereset,
+  statusreset,
+  sidereset,
   aspectreset,
   examreset,
   other2,
-  Reason,
+  reason,
   exam1reset,
-  Suboptimal,
-  Suboptimal1,
-  Suboptimalreset,
-  Atrophyreset,
-  Atrophy,
-  Atrophy1,
-  Symptommagnification,
-  Symptommagnification1,
-  Symptomreset,
+  suboptimal,
+  suboptimal1,
+  suboptimalreset,
+  atrophyreset,
+  atrophy,
+  atrophy1,
+  echymosisreset,
+  echymosis,
+  echymosis1,
+  symptommagnification,
+  symptommagnification1,
+  symptomreset,
   other3,
-  Reason1,
+  reason1,
   examreset1,
   exam1reset1,
-  Notperform,
-  Notperform1,
+  notperform,
+  notperform1,
   orthopedic,
   other4,
-  Reason2,
+  reason2,
   examreset2,
   exam1reset2,
-  Notperform2,
-  Negativepositive,
-  Negativepositive1,
+  notperform2,
+  negativepositive,
+  negativepositive1,
   other5,
-  Reason3,
-  Notperform3,
+  reason3,
+  notperform3,
   examreset3,
   exam1reset3,
   other6,
-  Reason4,
-  Notperform4,
+  reason4,
+  notperform4,
   examreset4,
   exam1reset4,
-  Negativepositive11,
-  Negativepositive01,
+  negativepositive11,
+  negativepositive01,
   other7,
-  Reason5,
-  Notperform5,
+  reason5,
+  notperform5,
   examreset5,
   exam1reset5,
-  Negativepositive12,
-  Negativepositive02,
-  Neurological,
-  Notperform6,
+  negativepositive12,
+  negativepositive02,
+  neurological,
+  notperform6,
   exam1reset6,
   examreset6,
-  Reason6,
+  reason6,
   other8,
-  Decreasedreset,
+  decreasedreset,
   other9,
-  Sidesv,
-  Sidesreset,
-  Sidevalues,
+  sidesv,
+  sidesreset,
+  sidevalues,
   strength,
-  DecreasedButton,
+  decreasedbutton,
   // Decreasedreset1,
   // other10,
   // Sidesv1,
@@ -131,307 +136,354 @@ function CervicalSpine({
   // DecreasedButton1,
   exam1reset7,
   examreset7,
-  Notperform7,
-  Reason7,
+  notperform7,
+  reason7,
   other11,
 
   sensation,
   exam1reset8,
   examreset8,
-  Notperform8,
-  Reason8,
+  notperform8,
+  reason8,
   other12,
-  Reflexes,
+  reflexes,
   resetreflex,
-  Adddetails,
-  resetadd,
-  Reflexside,
-  ReflexSreset,
-  reflexSvalue,
-  Reflex1,
-  Reflex,
-  Reflexonevalue,
-  Zeroreset,
-  Sidesv1,
-  Sidereset1,
-  Sidevalues1,
+  adddetails,
+  adddetails1,
+  adddetailsreset,
+  reflexside,
+  reflexsreset,
+  reflexsvalue,
+  reflex1,
+  reflex,
+  reflexonevalue,
+  zeroreset,
+  sidesv1,
+  sidereset1,
+  sidevalues1,
+  shoulder,
+  shoulder1,
+  shoulderreset,
+  value1,
+  value2,
+  values1,
+  individualvalues,
+  resetvalues1,
+  resetvalue2,
+  individualvalue2,
+  values2,
 }) {
   return (
     <div>
+      <h1 style={{ fontSize: "32px", marginLeft: "0px" }}>Cervical Spine</h1>
       <ScarVariation1
         aspect={aspect}
-        Appearance={Appearance}
-        Status={Status}
-        Side={Side}
-        Scar={Scar}
-        AppearanceOther={AppearanceOther}
-        StatusOther={StatusOther}
-        aspectOther={aspectOther}
-        Scarreset={Scarreset}
-        Appearancereset={Appearancereset}
-        Statusreset={Statusreset}
-        Sidereset={Sidereset}
+        Appearance={appearance}
+        Status={status}
+        Side={side}
+        Scar={scar}
+        AppearanceOther={appearanceother}
+        StatusOther={statusother}
+        aspectOther={aspectother}
+        Scarreset={scarreset}
+        Appearancereset={appearancereset}
+        Statusreset={statusreset}
+        Sidereset={sidereset}
         aspectreset={aspectreset}
       />
       <h2>Examination</h2>
-      <RadioButton InputArray={Exam} />
+      <RadioButton InputArray={exam} />
       <NotPerformed
         examreset={examreset1}
         other2={other3}
-        Reason={Reason1}
+        Reason={reason1}
         exam1reset={exam1reset1}
-        Notperform={Notperform1}
+        Notperform={notperform1}
       />
 
-      <h2 style={{ marginLeft: "15px" }}>Normal Exam</h2>
+      <h3 style={{ marginLeft: "15px" }}>Normal Exam</h3>
       <div style={{ marginLeft: "25px" }}>
-        <RadioButton InputArray={Nexam} />
-        <Reset1 Resetall={Nexamreset} />
+        <RadioButton InputArray={nexam} />
+        <PainScaleButton painScale={nexampainscale} />
+        <Reset1 Resetall={nexamreset} />
       </div>
-      <h2 style={{ marginLeft: "15px" }}>Alignment</h2>
-      <div style={{ marginLeft: "25px" }}>
-        <RadioButton InputArray={Alignment} />
-        <Reset1 Resetall={Alignmentreset} />
+      <h4 style={{ marginLeft: "25px" }}>Alignment</h4>
+      <div style={{ marginLeft: "30px" }}>
+        <RadioButton InputArray={alignment} />
+        <Reset1 Resetall={alignmentreset} />
       </div>
-      <h2 style={{ marginLeft: "15px" }}>Tenderness</h2>
-      <div style={{ marginLeft: "25px" }}>
-        <RadioButton InputArray={Tenderness} />
-        <Reset1 Resetall={Tendernessreset} />
+      <h4 style={{ marginLeft: "25px" }}>Tenderness</h4>
+      <div style={{ marginLeft: "30px" }}>
+        <RadioButton InputArray={tenderness} />
+        <Reset1 Resetall={tendernessreset} />
       </div>
-      <h3 style={{ marginLeft: "30px" }}>Status</h3>
+      <h5 style={{ marginLeft: "30px" }}>Status</h5>
       <div style={{ marginLeft: "35px", display: "flex" }}>
-        <CheckBox InputArray1={Tstatus} />
-        <Other other={TstatusOther} />
-        <Reset1 Resetall={Tstatusreset} />
+        <CheckBox InputArray1={tstatus} />
+        <Other other={tstatusother} />
+        <Reset1 Resetall={tstatusreset} />
       </div>
-      <h3 style={{ marginLeft: "30px" }}>Level</h3>
+      <h5 style={{ marginLeft: "30px" }}>Level</h5>
       <div style={{ marginLeft: "35px" }}>
-        <CsLevel level={level} other={other} />
+        <CsLevel
+          level={level}
+          value1={values2}
+          other={other}
+          resetvalue1={resetvalue2}
+          individualvalue={individualvalue2}
+        />
       </div>
-      <h3 style={{ marginLeft: "30px" }}>Position</h3>
+      <h5 style={{ marginLeft: "30px" }}>Position</h5>
       <div style={{ marginLeft: "35px", display: "flex" }}>
-        <CheckBox InputArray1={Tposition} />
-        <Other other={TpositionOther} />
-        <Reset1 Resetall={Tpositionreset} />
+        <CheckBox InputArray1={tposition} />
+        <Other other={tpositionother} />
+        <Reset1 Resetall={tpositionreset} />
       </div>
-      <h3 style={{ marginLeft: "30px" }}>Side</h3>
+      <h5 style={{ marginLeft: "30px" }}>Side</h5>
       <div style={{ marginLeft: "35px" }}>
-        <RadioButton InputArray={Tside} />
-        <Reset1 Resetall={Tsidereset} />
+        <RadioButton InputArray={tside} />
+        <Reset1 Resetall={tsidereset} />
       </div>
-      <h2 style={{ marginLeft: "15px" }}>Spasm</h2>
-      <div style={{ marginLeft: "25px" }}>
-        <RadioButton InputArray={Spasm} />
-        <Reset1 Resetall={Spasmreset} />
+      <h4 style={{ marginLeft: "25px" }}>Spasm</h4>
+      <div style={{ marginLeft: "30px" }}>
+        <RadioButton InputArray={spasm} />
+        <Reset1 Resetall={spasmreset} />
       </div>
-      <h3 style={{ marginLeft: "30px" }}>Status</h3>
+      <h5 style={{ marginLeft: "30px" }}>Status</h5>
       <div style={{ marginLeft: "35px", display: "flex" }}>
-        <CheckBox InputArray1={Sstatus} />
-        <Other other={SstatusOther} />
-        <Reset1 Resetall={Sstatusreset} />
+        <CheckBox InputArray1={sstatus} />
+        <Other other={sstatusother} />
+        <Reset1 Resetall={sstatusreset} />
       </div>
-      <h3 style={{ marginLeft: "30px" }}>Level</h3>
+      <h5 style={{ marginLeft: "30px" }}>Level</h5>
       <div style={{ marginLeft: "35px" }}>
-        <CsLevel level={level1} other={other1} />
+        <CsLevel
+          level={level1}
+          value1={values1}
+          other={other1}
+          resetvalue1={resetvalues1}
+          individualvalue={individualvalues}
+        />
       </div>
-      <h3 style={{ marginLeft: "30px" }}>Position</h3>
+      <h5 style={{ marginLeft: "30px" }}>Position</h5>
       <div style={{ marginLeft: "35px", display: "flex" }}>
-        <CheckBox InputArray1={Sposition} />
-        <Other other={SpositionOther} />
-        <Reset1 Resetall={Spositionreset} />
+        <CheckBox InputArray1={sposition} />
+        <Other other={spositionother} />
+        <Reset1 Resetall={spositionreset} />
       </div>
-      <h3 style={{ marginLeft: "30px" }}>Side</h3>
+      <h5 style={{ marginLeft: "30px" }}>Side</h5>
       <div style={{ marginLeft: "35px" }}>
-        <RadioButton InputArray={Sside} />
-        <Reset1 Resetall={Ssidereset} />
+        <RadioButton InputArray={sside} />
+        <Reset1 Resetall={ssidereset} />
       </div>
-      <h2 style={{ marginLeft: "15px" }}>ROM</h2>
-      <div style={{ marginLeft: "25px" }}>
-        <RadioButton InputArray={Rom} />
+      <h4 style={{ marginLeft: "25px" }}>ROM</h4>
+      <div style={{ marginLeft: "30px" }}>
+        <RadioButton InputArray={rom} />
         <NotPerformed
           examreset={examreset}
           other2={other2}
-          Reason={Reason}
+          Reason={reason}
           exam1reset={exam1reset}
-          Notperform={Notperform}
+          Notperform={notperform}
         />
       </div>
-      <h2 style={{ marginLeft: "15px" }}>Values</h2>
-      <div style={{ display: "flex", marginLeft: "35px" }}>
-        <div style={{ marginRight: "20px" }}>
-          <h3 style={{ marginLeft: "25px" }}>Flexion(45)</h3>
-          <input type="text" className="size" />
+      <h5 style={{ marginLeft: "30px" }}>Values</h5>
+      <div style={{ marginLeft: "10px" }}>
+        <div style={{ display: "flex", marginLeft: "35px" }}>
+          <div style={{ marginRight: "20px" }}>
+            <h5 style={{ marginLeft: "25px" }}>Flexion(45)</h5>
+            <input type="text" className="size" />
+          </div>
+          <div style={{ marginRight: "20px" }}>
+            <h5 style={{ marginLeft: "25px" }}>Extension(45)</h5>
+            <input type="text" className="size" />
+          </div>
+          <div style={{ marginRight: "20px" }}>
+            <h5 style={{ marginLeft: "25px" }}>Right-Rotation(60)</h5>
+            <input type="text" className="size" />
+          </div>
         </div>
-        <div style={{ marginRight: "20px" }}>
-          <h3 style={{ marginLeft: "25px" }}>Extension(45)</h3>
-          <input type="text" className="size" />
-        </div>
-        <div style={{ marginRight: "20px" }}>
-          <h3 style={{ marginLeft: "25px" }}>Right-Rotation(60)</h3>
-          <input type="text" className="size" />
+        <div style={{ display: "flex", marginLeft: "35px" }}>
+          <div style={{ marginRight: "20px" }}>
+            <h5 style={{ marginLeft: "25px" }}>Left-Rotation(60)</h5>
+            <input type="text" className="size" />
+          </div>
+          <div style={{ marginRight: "20px" }}>
+            <h5 style={{ marginLeft: "25px" }}>Right-Bending(45)</h5>
+            <input type="text" className="size" />
+          </div>
+          <div style={{ marginRight: "20px" }}>
+            <h5 style={{ marginLeft: "25px" }}>Left-Bending(45)</h5>
+            <input type="text" className="size" />
+          </div>
         </div>
       </div>
-      <div style={{ display: "flex", marginLeft: "35px" }}>
-        <div style={{ marginRight: "20px" }}>
-          <h3 style={{ marginLeft: "25px" }}>Left-Rotation(60)</h3>
-          <input type="text" className="size" />
-        </div>
-        <div style={{ marginRight: "20px" }}>
-          <h3 style={{ marginLeft: "25px" }}>Right-Bending(80)</h3>
-          <input type="text" className="size" />
-        </div>
-        <div style={{ marginRight: "20px" }}>
-          <h3 style={{ marginLeft: "25px" }}>Left-Bending(80)</h3>
-          <input type="text" className="size" />
-        </div>
-      </div>
-      <h3 style={{ marginLeft: "25px" }}>Self-Restricted</h3>
+      <h5 style={{ marginLeft: "30px" }}>Self-Restricted</h5>
       <div style={{ marginLeft: "35px" }}>
-        <RadioButton InputArray={RomSelf} />
-        <Reset1 Resetall={Romselfreset} />
+        <RadioButton InputArray={romself} />
+        <Reset1 Resetall={romselfreset} />
       </div>
-      <h3 style={{ marginLeft: "25px" }}>Pain causing motion</h3>
+      <h5 style={{ marginLeft: "30px" }}>Pain causing motion</h5>
       <div style={{ marginLeft: "35px" }}>
-        <CheckBox InputArray1={Rompain} />
-        <Reset1 Resetall={Rompainreset} />
+        <CheckBox InputArray1={rompain} />
+        <Reset1 Resetall={rompainreset} />
       </div>
-      <h2 style={{ marginLeft: "15px" }}>Suboptimal Effort</h2>
-      <div style={{ marginLeft: "25px" }}>
+      <h4 style={{ marginLeft: "25px" }}>Suboptimal Effort</h4>
+      <div style={{ marginLeft: "30px" }}>
         <YesNo
-          Suboptimal={Suboptimal}
-          Suboptimal1={Suboptimal1}
-          Suboptimalreset={Suboptimalreset}
+          Suboptimal={suboptimal}
+          Suboptimal1={suboptimal1}
+          Suboptimalreset={suboptimalreset}
         />
       </div>
-      <h2 style={{ marginLeft: "15px" }}>Atrophy</h2>
-      <div style={{ marginLeft: "25px" }}>
+      <h4 style={{ marginLeft: "25px" }}>Atrophy</h4>
+      <div style={{ marginLeft: "30px" }}>
         <YesNo
-          Suboptimal={Atrophy}
-          Suboptimal1={Atrophy1}
-          Suboptimalreset={Atrophyreset}
+          Suboptimal={atrophy}
+          Suboptimal1={atrophy1}
+          Suboptimalreset={atrophyreset}
         />
       </div>
-      <h2 style={{ marginLeft: "15px" }}>Symptom Magnification</h2>
-      <div style={{ marginLeft: "25px" }}>
+      <h4 style={{ marginLeft: "25px" }}>Ecchymosis Pain Scale</h4>
+      <div style={{ marginLeft: "30px" }}>
         <YesNo
-          Suboptimal={Symptommagnification}
-          Suboptimal1={Symptommagnification1}
-          Suboptimalreset={Symptomreset}
+          Suboptimal={echymosis}
+          Suboptimal1={echymosis1}
+          Suboptimalreset={echymosisreset}
         />
       </div>
-      <h2 style={{ marginLeft: "15px" }}>Orthopedic Test</h2>
-      <div style={{ marginLeft: "25px" }}>
+      <h4 style={{ marginLeft: "25px" }}>Symptom Magnification</h4>
+      <div style={{ marginLeft: "30px" }}>
+        <YesNo
+          Suboptimal={symptommagnification}
+          Suboptimal1={symptommagnification1}
+          Suboptimalreset={symptomreset}
+        />
+      </div>
+      <h4 style={{ marginLeft: "25px" }}>Orthopedic Test</h4>
+      <div style={{ marginLeft: "30px" }}>
         <RadioButton InputArray={orthopedic} />
         <NotPerformed
           other2={other4}
-          Reason={Reason2}
+          Reason={reason2}
           examreset={examreset2}
           exam1reset={exam1reset2}
-          Notperform={Notperform2}
+          Notperform={notperform2}
         />
       </div>
-      <h3 style={{ marginLeft: "25px" }}>Hoffman</h3>
+      <h5 style={{ marginLeft: "30px" }}>Hoffman</h5>
       <div style={{ marginLeft: "35px" }}>
         <NegativePositive
-          Negativepositive={Negativepositive}
-          Negativepositive1={Negativepositive1}
+          Negativepositive={negativepositive}
+          Negativepositive1={negativepositive1}
         />
         <NotPerformed
           other2={other5}
-          Reason={Reason3}
-          Notperform={Notperform3}
+          Reason={reason3}
+          Notperform={notperform3}
           examreset={examreset3}
           exam1reset={exam1reset3}
         />
       </div>
-      <h3 style={{ marginLeft: "25px" }}>Spurling</h3>
+      <h5 style={{ marginLeft: "30px" }}>Spurling</h5>
       <div style={{ marginLeft: "35px" }}>
         <NegativePositive
-          Negativepositive={Negativepositive01}
-          Negativepositive1={Negativepositive11}
+          Negativepositive={negativepositive01}
+          Negativepositive1={negativepositive11}
         />
         <NotPerformed
           other2={other6}
-          Reason={Reason4}
-          Notperform={Notperform4}
+          Reason={reason4}
+          Notperform={notperform4}
           exam1reset={exam1reset4}
           examreset={examreset4}
         />
       </div>
-      <h3 style={{ marginLeft: "25px" }}>Compression Test</h3>
+      <h5 style={{ marginLeft: "30px" }}>Compression Test</h5>
       <div style={{ marginLeft: "35px" }}>
         <NegativePositive
-          Negativepositive={Negativepositive02}
-          Negativepositive1={Negativepositive12}
+          Negativepositive={negativepositive02}
+          Negativepositive1={negativepositive12}
         />
         <NotPerformed
           other2={other7}
-          Reason={Reason5}
-          Notperform={Notperform5}
+          Reason={reason5}
+          Notperform={notperform5}
           exam1reset={exam1reset5}
           examreset={examreset5}
         />
       </div>
-      <h2 style={{ marginLeft: "15px" }}>Neurological Examination</h2>
-      <div style={{ marginLeft: "25px" }}>
-        <RadioButton InputArray={Neurological} />
+      <h5 style={{ marginLeft: "25px" }}>Shoulder Compression Test</h5>
+      <div style={{ marginLeft: "30px" }}>
+        <YesNo
+          Suboptimal={shoulder}
+          Suboptimal1={shoulder1}
+          Suboptimalreset={shoulderreset}
+        />
+      </div>
+      <h4 style={{ marginLeft: "25px" }}>Neurological Examination</h4>
+      <div style={{ marginLeft: "30px" }}>
+        <RadioButton InputArray={neurological} />
         <NotPerformed
           other2={other8}
-          Reason={Reason6}
-          Notperform={Notperform6}
+          Reason={reason6}
+          Notperform={notperform6}
           examreset={examreset6}
           exam1reset={exam1reset6}
         />
       </div>
-      <h3 style={{ marginLeft: "25px" }}>Muscle Strength</h3>
+      <h5 style={{ marginLeft: "30px" }}>Muscle Strength</h5>
       <div style={{ display: "flex", marginTop: "20px", marginLeft: "40px" }}>
         <Decreased
-          Decreasedreset={Decreasedreset}
+          Decreasedreset={decreasedreset}
           other9={other9}
-          Sidesv={Sidesv}
-          Sidereset={Sidesreset}
-          Sidevalues={Sidevalues}
+          Sidesv={sidesv}
+          Sidereset={sidesreset}
+          Sidevalues={sidevalues}
           strength={strength}
-          DecreasedButton={DecreasedButton}
+          DecreasedButton={decreasedbutton}
           exam1reset7={exam1reset7}
           examreset7={examreset7}
-          Notperform7={Notperform7}
-          Reason7={Reason7}
+          Notperform7={notperform7}
+          Reason7={reason7}
           other11={other11}
         />
       </div>
-      <h3 style={{ marginLeft: "25px" }}>Sensation</h3>
+      <h5 style={{ marginLeft: "30px" }}>Sensation</h5>
       <div style={{ marginLeft: "40px" }}>
         <RadioButton InputArray={sensation} />
         <NotPerformed
           other2={other12}
-          Reason={Reason8}
-          Notperform={Notperform8}
+          Reason={reason8}
+          Notperform={notperform8}
           examreset={examreset8}
           exam1reset={exam1reset8}
         />
       </div>
-      <h3 style={{ marginLeft: "25px" }}>Reflexes</h3>
+      <h5 style={{ marginLeft: "30px" }}>Reflexes</h5>
       <div style={{ marginLeft: "40px", display: "flex" }}>
         <OnePlus
-          Reflexonevalue={Reflexonevalue}
-          Reflex={Reflex}
-          Sidesv={Sidesv1}
-          Sidereset={Sidereset1}
-          Sidevalues={Sidevalues1}
+          Reflexonevalue={reflexonevalue}
+          Reflex={reflex}
+          Sidesv={sidesv1}
+          Sidereset={sidereset1}
+          Sidevalues={sidevalues1}
         />
         <Zero
-          Reflexside={Reflexside}
-          ReflexSreset={ReflexSreset}
-          reflexSvalue={reflexSvalue}
-          Reflex={Reflex1}
-          Zeroreset={Zeroreset}
+          Reflexside={reflexside}
+          ReflexSreset={reflexsreset}
+          reflexSvalue={reflexsvalue}
+          Reflex={reflex1}
+          Zeroreset={zeroreset}
         />
       </div>
-      <h2 style={{ marginLeft: "15px" }}>Add Details</h2>
-      <div style={{ marginLeft: "25px" }}>
-        <RadioButton InputArray={Adddetails} />
-        <Reset1 Resetall={resetadd} />
+      <h4 style={{ marginLeft: "25px" }}>Add Details</h4>
+      <div style={{ marginLeft: "30px" }}>
+        <YesNo
+          Suboptimal={adddetails}
+          Suboptimal1={adddetails1}
+          Suboptimalreset={adddetailsreset}
+        />
       </div>
     </div>
   );
