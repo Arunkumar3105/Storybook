@@ -3,11 +3,11 @@ import Reset1 from "../Reset1/Reset1";
 
 import RadioButton from "../RadioButton/RadioButton";
 
-function Sides({ Sidesv, Sidevalues, Sidereset }) {
+function Sides({ sidesv, sidevalues, sidereset }) {
   const [sidev, setSide] = useState(false);
   return (
     <span>
-      {Sidesv.map((value) => (
+      {sidesv.map((value) => (
         <span className="scar">
           <label>
             <input
@@ -23,8 +23,8 @@ function Sides({ Sidesv, Sidevalues, Sidereset }) {
       <br />
       {sidev ? (
         <div style={{ display: "flex" }}>
-          <RadioButton InputArray={Sidevalues} />
-          <Reset1 Resetall={Sidereset} />
+          <RadioButton inputarray={sidevalues} />
+          <Reset1 resetall={sidereset} />
         </div>
       ) : null}
     </span>

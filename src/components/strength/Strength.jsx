@@ -6,21 +6,21 @@ import Reset1 from "../Reset1/Reset1";
 import NotPerformed from "../Not-perfomed/NotPerformed";
 
 function Strength({
-  DecreasedButton,
+  decreasedbutton,
   strength,
 
   other9,
-  Decreasedreset,
+  decreasedreset,
   exam1reset7,
   examreset7,
-  Notperform7,
-  Reason7,
+  notperform7,
+  reason7,
   other11,
 }) {
   const [mstrength, setmstrength] = useState(false);
   return (
     <span>
-      {DecreasedButton.map((value, key) => (
+      {decreasedbutton.map((value, key) => (
         <span
           key={key}
           className={value.classname}
@@ -43,18 +43,18 @@ function Strength({
       ))}
       <NotPerformed
         other2={other11}
-        Reason={Reason7}
-        Notperform={Notperform7}
+        reason={reason7}
+        notperform={notperform7}
         examreset={examreset7}
         exam1reset={exam1reset7}
       />
 
       {mstrength ? (
         <span style={{ display: "flex" }}>
-          <CheckBox InputArray1={strength} />
+          <CheckBox inputarray1={strength} />
 
           <Others other={other9} />
-          <Reset1 Resetall={Decreasedreset} />
+          <Reset1 resetall={decreasedreset} />
         </span>
       ) : null}
     </span>
