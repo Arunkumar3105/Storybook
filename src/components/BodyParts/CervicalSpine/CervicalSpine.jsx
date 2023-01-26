@@ -178,17 +178,17 @@ function CervicalSpine({
       <h1 style={{ fontSize: "32px", marginLeft: "0px" }}>Cervical Spine</h1>
       <ScarVariation1
         aspect={aspect}
-        Appearance={appearance}
-        Status={status}
-        Side={side}
-        Scar={scar}
-        AppearanceOther={appearanceother}
-        StatusOther={statusother}
-        aspectOther={aspectother}
-        Scarreset={scarreset}
-        Appearancereset={appearancereset}
-        Statusreset={statusreset}
-        Sidereset={sidereset}
+        appearance={appearance}
+        status={status}
+        side={side}
+        scar={scar}
+        appearanceother={appearanceother}
+        statusother={statusother}
+        aspectother={aspectother}
+        scarreset={scarreset}
+        appearancereset={appearancereset}
+        statusreset={statusreset}
+        sidereset={sidereset}
         aspectreset={aspectreset}
       />
       <h2>Examination</h2>
@@ -196,32 +196,32 @@ function CervicalSpine({
       <NotPerformed
         examreset={examreset1}
         other2={other3}
-        Reason={reason1}
+        reason={reason1}
         exam1reset={exam1reset1}
-        Notperform={notperform1}
+        notperform={notperform1}
       />
 
       <h3 style={{ marginLeft: "15px" }}>Normal Exam</h3>
       <div style={{ marginLeft: "25px" }}>
-        <RadioButton InputArray={nexam} />
-        <PainScaleButton painScale={nexampainscale} />
-        <Reset1 Resetall={nexamreset} />
+        <RadioButton inputarray={nexam} />
+        <PainScaleButton painscale={nexampainscale} />
+        <Reset1 resetall={nexamreset} />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Alignment</h4>
       <div style={{ marginLeft: "30px" }}>
-        <RadioButton InputArray={alignment} />
-        <Reset1 Resetall={alignmentreset} />
+        <RadioButton inputarray={alignment} />
+        <Reset1 resetall={alignmentreset} />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Tenderness</h4>
       <div style={{ marginLeft: "30px" }}>
-        <RadioButton InputArray={tenderness} />
-        <Reset1 Resetall={tendernessreset} />
+        <RadioButton inputarray={tenderness} />
+        <Reset1 resetall={tendernessreset} />
       </div>
       <h5 style={{ marginLeft: "30px" }}>Status</h5>
       <div style={{ marginLeft: "35px", display: "flex" }}>
-        <CheckBox InputArray1={tstatus} />
+        <CheckBox inputarray1={tstatus} />
         <Other other={tstatusother} />
-        <Reset1 Resetall={tstatusreset} />
+        <Reset1 resetall={tstatusreset} />
       </div>
       <h5 style={{ marginLeft: "30px" }}>Level</h5>
       <div style={{ marginLeft: "35px" }}>
@@ -235,25 +235,25 @@ function CervicalSpine({
       </div>
       <h5 style={{ marginLeft: "30px" }}>Position</h5>
       <div style={{ marginLeft: "35px", display: "flex" }}>
-        <CheckBox InputArray1={tposition} />
+        <CheckBox inputarray1={tposition} />
         <Other other={tpositionother} />
-        <Reset1 Resetall={tpositionreset} />
+        <Reset1 resetall={tpositionreset} />
       </div>
       <h5 style={{ marginLeft: "30px" }}>Side</h5>
       <div style={{ marginLeft: "35px" }}>
-        <RadioButton InputArray={tside} />
-        <Reset1 Resetall={tsidereset} />
+        <RadioButton inputarray={tside} />
+        <Reset1 resetall={tsidereset} />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Spasm</h4>
       <div style={{ marginLeft: "30px" }}>
-        <RadioButton InputArray={spasm} />
-        <Reset1 Resetall={spasmreset} />
+        <RadioButton inputarray={spasm} />
+        <Reset1 resetall={spasmreset} />
       </div>
       <h5 style={{ marginLeft: "30px" }}>Status</h5>
       <div style={{ marginLeft: "35px", display: "flex" }}>
-        <CheckBox InputArray1={sstatus} />
+        <CheckBox inputarray1={sstatus} />
         <Other other={sstatusother} />
-        <Reset1 Resetall={sstatusreset} />
+        <Reset1 resetall={sstatusreset} />
       </div>
       <h5 style={{ marginLeft: "30px" }}>Level</h5>
       <div style={{ marginLeft: "35px" }}>
@@ -267,24 +267,24 @@ function CervicalSpine({
       </div>
       <h5 style={{ marginLeft: "30px" }}>Position</h5>
       <div style={{ marginLeft: "35px", display: "flex" }}>
-        <CheckBox InputArray1={sposition} />
+        <CheckBox inputarray1={sposition} />
         <Other other={spositionother} />
-        <Reset1 Resetall={spositionreset} />
+        <Reset1 resetall={spositionreset} />
       </div>
       <h5 style={{ marginLeft: "30px" }}>Side</h5>
       <div style={{ marginLeft: "35px" }}>
-        <RadioButton InputArray={sside} />
-        <Reset1 Resetall={ssidereset} />
+        <RadioButton inputarray={sside} />
+        <Reset1 resetall={ssidereset} />
       </div>
       <h4 style={{ marginLeft: "25px" }}>ROM</h4>
       <div style={{ marginLeft: "30px" }}>
-        <RadioButton InputArray={rom} />
+        <RadioButton inputarray={rom} />
         <NotPerformed
           examreset={examreset}
           other2={other2}
           Reason={reason}
           exam1reset={exam1reset}
-          Notperform={notperform}
+          notperform={notperform}
         />
       </div>
       <h5 style={{ marginLeft: "30px" }}>Values</h5>
@@ -320,44 +320,44 @@ function CervicalSpine({
       </div>
       <h5 style={{ marginLeft: "30px" }}>Self-Restricted</h5>
       <div style={{ marginLeft: "35px" }}>
-        <RadioButton InputArray={romself} />
-        <Reset1 Resetall={romselfreset} />
+        <RadioButton inputarray={romself} />
+        <Reset1 resetall={romselfreset} />
       </div>
       <h5 style={{ marginLeft: "30px" }}>Pain causing motion</h5>
       <div style={{ marginLeft: "35px" }}>
-        <CheckBox InputArray1={rompain} />
-        <Reset1 Resetall={rompainreset} />
+        <CheckBox inputarray1={rompain} />
+        <Reset1 resetall={rompainreset} />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Suboptimal Effort</h4>
       <div style={{ marginLeft: "30px" }}>
         <YesNo
-          Suboptimal={suboptimal}
-          Suboptimal1={suboptimal1}
-          Suboptimalreset={suboptimalreset}
+          suboptimal={suboptimal}
+          suboptimal1={suboptimal1}
+          suboptimalreset={suboptimalreset}
         />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Atrophy</h4>
       <div style={{ marginLeft: "30px" }}>
         <YesNo
-          Suboptimal={atrophy}
-          Suboptimal1={atrophy1}
-          Suboptimalreset={atrophyreset}
+          suboptimal={atrophy}
+          suboptimal1={atrophy1}
+          suboptimalreset={atrophyreset}
         />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Ecchymosis Pain Scale</h4>
       <div style={{ marginLeft: "30px" }}>
         <YesNo
-          Suboptimal={echymosis}
-          Suboptimal1={echymosis1}
-          Suboptimalreset={echymosisreset}
+          suboptimal={echymosis}
+          suboptimal1={echymosis1}
+          suboptimalreset={echymosisreset}
         />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Symptom Magnification</h4>
       <div style={{ marginLeft: "30px" }}>
         <YesNo
-          Suboptimal={symptommagnification}
-          Suboptimal1={symptommagnification1}
-          Suboptimalreset={symptomreset}
+          suboptimal={symptommagnification}
+          suboptimal1={symptommagnification1}
+          suboptimalreset={symptomreset}
         />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Orthopedic Test</h4>
@@ -365,22 +365,22 @@ function CervicalSpine({
         <RadioButton InputArray={orthopedic} />
         <NotPerformed
           other2={other4}
-          Reason={reason2}
+          reason={reason2}
           examreset={examreset2}
           exam1reset={exam1reset2}
-          Notperform={notperform2}
+          notperform={notperform2}
         />
       </div>
       <h5 style={{ marginLeft: "30px" }}>Hoffman</h5>
       <div style={{ marginLeft: "35px" }}>
         <NegativePositive
-          Negativepositive={negativepositive}
-          Negativepositive1={negativepositive1}
+          negativepositive={negativepositive}
+          negativepositive1={negativepositive1}
         />
         <NotPerformed
           other2={other5}
-          Reason={reason3}
-          Notperform={notperform3}
+          reason={reason3}
+          notperform={notperform3}
           examreset={examreset3}
           exam1reset={exam1reset3}
         />
@@ -388,13 +388,13 @@ function CervicalSpine({
       <h5 style={{ marginLeft: "30px" }}>Spurling</h5>
       <div style={{ marginLeft: "35px" }}>
         <NegativePositive
-          Negativepositive={negativepositive01}
-          Negativepositive1={negativepositive11}
+          negativepositive={negativepositive01}
+          negativepositive1={negativepositive11}
         />
         <NotPerformed
           other2={other6}
-          Reason={reason4}
-          Notperform={notperform4}
+          reason={reason4}
+          notperform={notperform4}
           exam1reset={exam1reset4}
           examreset={examreset4}
         />
@@ -402,13 +402,13 @@ function CervicalSpine({
       <h5 style={{ marginLeft: "30px" }}>Compression Test</h5>
       <div style={{ marginLeft: "35px" }}>
         <NegativePositive
-          Negativepositive={negativepositive02}
-          Negativepositive1={negativepositive12}
+          negativepositive={negativepositive02}
+          negativepositive1={negativepositive12}
         />
         <NotPerformed
           other2={other7}
           Reason={reason5}
-          Notperform={notperform5}
+          notperform={notperform5}
           exam1reset={exam1reset5}
           examreset={examreset5}
         />
@@ -416,18 +416,18 @@ function CervicalSpine({
       <h5 style={{ marginLeft: "25px" }}>Shoulder Compression Test</h5>
       <div style={{ marginLeft: "30px" }}>
         <YesNo
-          Suboptimal={shoulder}
-          Suboptimal1={shoulder1}
-          Suboptimalreset={shoulderreset}
+          suboptimal={shoulder}
+          suboptimal1={shoulder1}
+          suboptimalreset={shoulderreset}
         />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Neurological Examination</h4>
       <div style={{ marginLeft: "30px" }}>
-        <RadioButton InputArray={neurological} />
+        <RadioButton inputarray={neurological} />
         <NotPerformed
           other2={other8}
-          Reason={reason6}
-          Notperform={notperform6}
+          reason={reason6}
+          notperform={notperform6}
           examreset={examreset6}
           exam1reset={exam1reset6}
         />
@@ -435,27 +435,27 @@ function CervicalSpine({
       <h5 style={{ marginLeft: "30px" }}>Muscle Strength</h5>
       <div style={{ display: "flex", marginTop: "20px", marginLeft: "40px" }}>
         <Decreased
-          Decreasedreset={decreasedreset}
+          decreasedreset={decreasedreset}
           other9={other9}
-          Sidesv={sidesv}
-          Sidereset={sidesreset}
-          Sidevalues={sidevalues}
+          sidesv={sidesv}
+          sidereset={sidesreset}
+          sidevalues={sidevalues}
           strength={strength}
-          DecreasedButton={decreasedbutton}
+          decreasedbutton={decreasedbutton}
           exam1reset7={exam1reset7}
           examreset7={examreset7}
-          Notperform7={notperform7}
-          Reason7={reason7}
+          notperform7={notperform7}
+          reason7={reason7}
           other11={other11}
         />
       </div>
       <h5 style={{ marginLeft: "30px" }}>Sensation</h5>
       <div style={{ marginLeft: "40px" }}>
-        <RadioButton InputArray={sensation} />
+        <RadioButton inputarray={sensation} />
         <NotPerformed
           other2={other12}
-          Reason={reason8}
-          Notperform={notperform8}
+          reason={reason8}
+          notperform={notperform8}
           examreset={examreset8}
           exam1reset={exam1reset8}
         />
@@ -463,26 +463,26 @@ function CervicalSpine({
       <h5 style={{ marginLeft: "30px" }}>Reflexes</h5>
       <div style={{ marginLeft: "40px", display: "flex" }}>
         <OnePlus
-          Reflexonevalue={reflexonevalue}
-          Reflex={reflex}
-          Sidesv={sidesv1}
-          Sidereset={sidereset1}
-          Sidevalues={sidevalues1}
+          reflexonevalue={reflexonevalue}
+          reflex={reflex}
+          sidesv={sidesv1}
+          sidereset={sidereset1}
+          sidevalues={sidevalues1}
         />
         <Zero
-          Reflexside={reflexside}
-          ReflexSreset={reflexsreset}
-          reflexSvalue={reflexsvalue}
-          Reflex={reflex1}
-          Zeroreset={zeroreset}
+          reflexside={reflexside}
+          reflexsreset={reflexsreset}
+          reflexsvalue={reflexsvalue}
+          reflex={reflex1}
+          zeroreset={zeroreset}
         />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Add Details</h4>
       <div style={{ marginLeft: "30px" }}>
         <YesNo
-          Suboptimal={adddetails}
-          Suboptimal1={adddetails1}
-          Suboptimalreset={adddetailsreset}
+          suboptimal={adddetails}
+          suboptimal1={adddetails1}
+          suboptimalreset={adddetailsreset}
         />
       </div>
     </div>

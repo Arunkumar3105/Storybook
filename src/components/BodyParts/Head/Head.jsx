@@ -15,15 +15,15 @@ function Head({
       <h1 style={{ fontSize: "32px" }}>{label}</h1>
       <h2>NormoCephalic</h2>
       <YesNo
-        Suboptimal={headnovalue}
-        Suboptimalreset={headreset}
-        Suboptimal1={headyesno}
+        suboptimal={headnovalue}
+        suboptimalreset={headreset}
+        suboptimal1={headyesno}
       />
       <h2>Atraumatic</h2>
       <YesNo
-        Suboptimal={headAtraumaticnovalue}
-        Suboptimalreset={headAtraumaticreset}
-        Suboptimal1={headAtraumaticyesno}
+        suboptimal={headAtraumaticnovalue}
+        suboptimalreset={headAtraumaticreset}
+        suboptimal1={headAtraumaticyesno}
       />
     </div>
   );

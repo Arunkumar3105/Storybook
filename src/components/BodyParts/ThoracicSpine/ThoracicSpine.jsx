@@ -121,19 +121,19 @@ const ThoracicSpine = ({
       ))}
       <span>
         <ScarVariation1
-          Status={statusvalue}
-          Scarreset={scarreset}
-          StatusOther={statusother}
-          Statusreset={statusreset}
-          AppearanceOther={appearanceother}
-          Appearance={appearancevalue}
-          aspectOther={aspectname}
+          status={statusvalue}
+          scarreset={scarreset}
+          statusother={statusother}
+          statusreset={statusreset}
+          appearanceother={appearanceother}
+          appearance={appearancevalue}
+          aspectother={aspectname}
           aspect={aspectvalue}
-          Side={sidevalue}
-          Scar={scarvalue}
-          Appearancereset={appearancereset}
+          side={sidevalue}
+          scar={scarvalue}
+          appearancereset={appearancereset}
           aspectreset={aspectreset}
-          Sidereset={scarsidereset}
+          sidereset={scarsidereset}
         />
       </span>
       <h2>Examination</h2>
@@ -141,34 +141,34 @@ const ThoracicSpine = ({
         <span style={{ display: "flex" }}>
           <RadioButton InputArray={exam} />
           <NotPerformed
-            Notperform={examnperform}
+            notperform={examnperform}
             exam1reset={examnpreset}
-            Reason={examnpreason}
+            reason={examnpreason}
             other2={examnpother}
             examreset={examnpreasonreset}
           />
         </span>
         <h2>Normal Exam</h2>
         <span style={{ display: "flex" }}>
-          <RadioButton InputArray={nexam} />
-          <PainScaleButton painScale={nexampainscale} />
-          <Reset1 Resetall={nexamreset} />
+          <RadioButton inputarray={nexam} />
+          <PainScaleButton painscale={nexampainscale} />
+          <Reset1 resetall={nexamreset} />
         </span>
         <h3>Tenderness</h3>
         <span style={{ display: "flex" }}>
-          <RadioButton InputArray={tenderness} />
-          <Reset1 Resetall={tendernessreset} />
+          <RadioButton inputarray={tenderness} />
+          <Reset1 resetall={tendernessreset} />
         </span>
         <div style={{ marginLeft: "30px" }}>
           <h4>Classification</h4>
           <span style={{ display: "flex" }}>
-            <CheckBox InputArray1={tstenderclassification} />
+            <CheckBox inputarray1={tstenderclassification} />
             <Others other={cother} />
-            <Reset1 Resetall={creset} />
+            <Reset1 resetall={creset} />
           </span>
           <h4>Level</h4>
           <span style={{ display: "flex" }}>
-            <RadioButton InputArray={clevel} /> <br />
+            <RadioButton inputarray={clevel} /> <br />
             <span style={{ display: "flex" }}>
               <CsLevel
                 level={level2}
@@ -181,31 +181,31 @@ const ThoracicSpine = ({
           </span>
           <h4>Position</h4>
           <span style={{ display: "flex" }}>
-            <CheckBox InputArray1={position} />
+            <CheckBox inputarray1={position} />
             <Others other={pother} />
-            <Reset1 Resetall={preset} />
+            <Reset1 resetall={preset} />
           </span>
           <h4>Sides</h4>
           <span style={{ display: "flex" }}>
-            <RadioButton InputArray={sides} />
-            <Reset1 Resetall={tsidereset} />
+            <RadioButton inputarray={sides} />
+            <Reset1 resetall={tsidereset} />
           </span>
         </div>
         <h3>Spasm</h3>
         <span style={{ display: "flex" }}>
-          <RadioButton InputArray={spasm} />
-          <Reset1 Resetall={spasmreset1} />
+          <RadioButton inputarray={spasm} />
+          <Reset1 resetall={spasmreset1} />
         </span>
         <div style={{ marginLeft: "30px" }}>
           <h4>Classification</h4>
           <span style={{ display: "flex" }}>
-            <CheckBox InputArray1={tsspasmclassification} />
+            <CheckBox inputarray1={tsspasmclassification} />
             <Others other={spasmother} />
-            <Reset1 Resetall={spasmreset} />
+            <Reset1 resetall={spasmreset} />
           </span>
           <h4>Level</h4>
           <span style={{ display: "flex" }}>
-            <RadioButton InputArray={spasmlevel} />
+            <RadioButton inputarray={spasmlevel} />
             <CsLevel
               level={level3}
               other={other2}
@@ -216,24 +216,24 @@ const ThoracicSpine = ({
           </span>
           <h4>Position</h4>
           <span style={{ display: "flex" }}>
-            <CheckBox InputArray1={spasmposition} />
+            <CheckBox inputarray1={spasmposition} />
             <Others other={spasmpositionother} />
-            <Reset1 Resetall={spasmpreset} />
+            <Reset1 resetall={spasmpreset} />
           </span>
           <h4>Sides</h4>
           <span style={{ display: "flex" }}>
-            <RadioButton InputArray={spasmsides} />
-            <Reset1 Resetall={ssidereset} />
+            <RadioButton inputarray={spasmsides} />
+            <Reset1 resetall={ssidereset} />
           </span>
         </div>
       </span>
       <h3>ROM</h3>
       <span style={{ display: "flex" }}>
-        <RadioButton InputArray={tsrom} />
+        <RadioButton inputarray={tsrom} />
         <NotPerformed
-          Notperform={tsromnperform}
+          notperform={tsromnperform}
           exam1reset={tsromnpreset}
-          Reason={tsromnpreason}
+          reason={tsromnpreason}
           other2={tsromnpother}
           examreset={tsromnpreasonreset}
         />
@@ -253,76 +253,76 @@ const ThoracicSpine = ({
         <h4>Self Restricted</h4>
         <span style={{ display: "flex" }}>
           <YesNo
-            Suboptimal1={sryesno}
-            Suboptimal={yesself}
-            Suboptimalreset={selfyesreset}
+            suboptimal1={sryesno}
+            suboptimal={yesself}
+            suboptimalreset={selfyesreset}
           />
         </span>
         <h4>Pain Causing Motion</h4>
         <span style={{ display: "flex" }}>
-          <CheckBox InputArray1={paincm} />
-          <Reset1 Resetall={paincmreset} />
+          <CheckBox inputarray1={paincm} />
+          <Reset1 resetall={paincmreset} />
         </span>
       </div>
       <h3>Suboptimal Effort</h3>
       <span>
         <YesNo
-          Suboptimal1={soptimalyes}
-          Suboptimal={soptimalno}
-          Suboptimalreset={soptimalyesreset}
+          suboptimal1={soptimalyes}
+          suboptimal={soptimalno}
+          suboptimalreset={soptimalyesreset}
         />
       </span>
       <h3>Atrophy</h3>
       <YesNo
-        Suboptimal1={atrophyyes}
-        Suboptimal={atrophyno}
-        Suboptimalreset={atrophyyesreset}
+        suboptimal1={atrophyyes}
+        suboptimal={atrophyno}
+        suboptimalreset={atrophyyesreset}
       />
       <h3>Ecchymosis Pain Scale</h3>
       <YesNo
-        Suboptimal1={ecchymosisyes}
-        Suboptimal={ecchymosisno}
-        Suboptimalreset={ecchymosisyesreset}
+        suboptimal1={ecchymosisyes}
+        suboptimal={ecchymosisno}
+        suboptimalreset={ecchymosisyesreset}
       />
       <h3>Symptom Magnification</h3>
       <span>
         <YesNo
-          Suboptimal1={symptomyes}
-          Suboptimal={symptomno}
-          Suboptimalreset={symptomreset}
+          suboptimal1={symptomyes}
+          suboptimal={symptomno}
+          suboptimalreset={symptomreset}
         />
       </span>
       <h3>Chest Expansion</h3>
       <span style={{ display: "flex" }}>
-        <RadioButton InputArray={cexpansion} />
-        <Reset1 Resetall={cexpansionreset} />
+        <RadioButton inputarray={cexpansion} />
+        <Reset1 resetall={cexpansionreset} />
       </span>
       <span style={{ display: "flex", marginTop: "10px" }}>
-        <RadioButton InputArray={cexpansion1} />
-        <Reset1 Resetall={cexpansionreset1} />
+        <RadioButton inputarray={cexpansion1} />
+        <Reset1 resetall={cexpansionreset1} />
       </span>
       <h3>Sensation</h3>
       <span style={{ display: "flex" }}>
-        <RadioButton InputArray={sensation} />
+        <RadioButton inputarray={sensation} />
         <Decreased
-          DecreasedButton={decreasedbutton}
+          decreasedbutton={decreasedbutton}
           strength={strength}
-          Sidevalues={sidevalues}
-          Sidereset={sidereset}
-          Sidesv={sidesv}
+          sidevalues={sidevalues}
+          sidereset={sidereset}
+          sidesv={sidesv}
           other9={other9}
-          Decreasedreset={decreasedreset}
-          Notperform7={mstrengthnpvalue}
+          decreasedreset={decreasedreset}
+          notperform7={mstrengthnpvalue}
           exam1reset7={mstrengthnpreset}
-          Reason7={mstrengthnpreason}
+          reason7={mstrengthnpreason}
           other11={mstrengthnpother}
           examreset7={mstrengthnpreasonreset}
         />
       </span>
       <h3>Add Details</h3>
       <span style={{ display: "flex" }}>
-        <RadioButton InputArray={addetails} />
-        <Reset1 Resetall={addetailsreset} />
+        <RadioButton inputarray={addetails} />
+        <Reset1 resetall={addetailsreset} />
       </span>
     </div>
   );

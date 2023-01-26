@@ -162,101 +162,101 @@ function Shoulder({
       ))}
       <span>
         <ScarVariation2
-          Scar={rsscar}
-          Scarreset={rsscarreset}
+          scar={rsscar}
+          scarreset={rsscarreset}
           aspect={rsaspect}
-          aspectOther={rsaspectother}
+          aspectother={rsaspectother}
           aspectreset={rsaspectreset}
-          Appearance={rsappearance}
-          Appearancereset={rsappearancereset}
-          AppearanceOther={rsappearanceother}
-          Status={rsstatus}
-          Statusreset={rsstatusreset}
-          StatusOther={rsstatusother}
+          sppearance={rsappearance}
+          appearancereset={rsappearancereset}
+          appearanceother={rsappearanceother}
+          status={rsstatus}
+          statusreset={rsstatusreset}
+          statusother={rsstatusother}
         />
       </span>
       <h2>Examination</h2>
 
       <span style={{ display: "flex" }}>
-        <RadioButton InputArray={rshoulderexam1} />
+        <RadioButton inputarray={rshoulderexam1} />
         <NotPerformed
-          Notperform={exnperform}
+          notperform={exnperform}
           exam1reset={exnpreset}
-          Reason={exnpreason}
+          reason={exnpreason}
           other2={ExNpother}
           examreset={exnpreasonreset}
         />
       </span>
       <h2>Normal Exam</h2>
       <span style={{ display: "flex" }}>
-        <RadioButton InputArray={normalexam} />
-        <PainScaleButton painScale={nexampainscale} />
-        <Reset1 Resetall={nexamreset} />
+        <RadioButton inputarray={normalexam} />
+        <PainScaleButton painscale={nexampainscale} />
+        <Reset1 resetall={nexamreset} />
       </span>
       <div style={{ marginLeft: "30px" }}>
         <span>
           <h3>Findings</h3>
           <span>
             <Findings
-              Swelling={rsswelling}
-              Erythema={rserythema}
-              Effusion={rseffusion}
-              Redness={rsredness}
-              Edema={rsedema}
-              Ecchymosis={rsecchymosis}
-              Deformity={rsdeformity}
-              Swelling1={rsswelling1}
-              Erythema1={rserythema1}
-              Effusion1={rseffusion1}
-              Redness1={rsredness1}
-              Edema1={rsedema1}
-              Ecchymosis1={rsecchymosis1}
-              Deformity1={rsdeformity1}
-              Fyes={rsfyes}
-              Fno={rsfno}
-              FNoother={rsfnoother}
-              FyesOther={rsfyesother}
+              swelling={rsswelling}
+              erythema={rserythema}
+              effusion={rseffusion}
+              redness={rsredness}
+              edema={rsedema}
+              ecchymosis={rsecchymosis}
+              deformity={rsdeformity}
+              swelling1={rsswelling1}
+              erythema1={rserythema1}
+              effusion1={rseffusion1}
+              redness1={rsredness1}
+              edema1={rsedema1}
+              ecchymosis1={rsecchymosis1}
+              deformity1={rsdeformity1}
+              fyes={rsfyes}
+              fno={rsfno}
+              fnoother={rsfnoother}
+              fyesother={rsfyesother}
             />
           </span>
 
           <h3>Tenderness</h3>
           <span>
             <span style={{ display: "flex" }}>
-              <RadioButton InputArray={rstenderness} />
-              <Reset1 Resetall={rstenderreset} />
+              <RadioButton inputarray={rstenderness} />
+              <Reset1 resetall={rstenderreset} />
             </span>
             <br />
             <div style={{ marginLeft: "30px" }}>
               <h4>Classification</h4>
               <span style={{ display: "flex" }}>
-                <CheckBox InputArray1={tclassification} />
+                <CheckBox inputarray1={tclassification} />
                 <Others other={rscother} />
-                <Reset1 Resetall={creset} />
+                <Reset1 resetall={creset} />
               </span>
               <h4>Position</h4>
               <span>
-                <CheckBox InputArray1={tposition} />
+                <CheckBox inputarray1={tposition} />
                 <span style={{ display: "flex", marginTop: "20px" }}>
                   <Others other={tpositionother} />
-                  <Reset1 Resetall={positionreset} />
+                  <Reset1 resetall={positionreset} />
                 </span>
               </span>
               <h4>Aspect</h4>
               <span style={{ display: "flex" }}>
-                <CheckBox InputArray1={taspect} />
+                <CheckBox inputarray1={taspect} />
                 <Others other={taspectother} />
-                <Reset1 Resetall={aspectreset} />
+                <Reset1 resetall={aspectreset} />
               </span>
             </div>
           </span>
           <h3>ROM</h3>
           <span>
             <span style={{ display: "flex" }}>
-              <RadioButton InputArray={rsrom} />
+              <RadioButton inputarray={rsrom} />
               <NotPerformed
-                Notperform={romnperform}
+                notperform={romnperform}
                 exam1reset={romnpreset}
-                Reason={romnpreason}
+                reason={romnpreason}
                 other2={romnpother}
                 examreset={romnpreasonreset}
               />
@@ -296,54 +296,54 @@ function Shoulder({
               </span>
               <h4>Self Restricted</h4>
               <span style={{ display: "flex" }}>
-                <RadioButton InputArray={rsrestricted} />
-                <Reset1 Resetall={selfrreset} />
+                <RadioButton inputarray={rsrestricted} />
+                <Reset1 resetall={selfrreset} />
               </span>
               <h4>Pain Causing Motion</h4>
               <span style={{ display: "flex" }}>
-                <CheckBox InputArray1={rspcmotion} />
-                <Reset1 Resetall={pcmotionreset} />
+                <CheckBox inputarray1={rspcmotion} />
+                <Reset1 resetall={pcmotionreset} />
               </span>
             </div>
           </span>
           <span>
             <h3>Instability</h3>
             <YesNo
-              Suboptimal={rsinstabilityyes}
-              Suboptimal1={rsinstabilityyesnovalue}
-              Suboptimalreset={rsinstabilityyesreset}
+              suboptimal={rsinstabilityyes}
+              suboptimal1={rsinstabilityyesnovalue}
+              suboptimalreset={rsinstabilityyesreset}
             />
             <h3>Symptom Magnification</h3>
             <YesNo
-              Suboptimal={rssymptommyes}
-              Suboptimal1={rssymptommyesnovalue}
-              Suboptimalreset={rssymptommyesreset}
+              suboptimal={rssymptommyes}
+              suboptimal1={rssymptommyesnovalue}
+              suboptimalreset={rssymptommyesreset}
             />
             <h3>Suboptimal Effort</h3>
             <YesNo
-              Suboptimal={rssuboptimalyes}
-              Suboptimal1={rssuboptimalyesnovalue}
-              Suboptimalreset={rssuboptimalyesreset}
+              suboptimal={rssuboptimalyes}
+              suboptimal1={rssuboptimalyesnovalue}
+              suboptimalreset={rssuboptimalyesreset}
             />
             <h3>Atrophy</h3>
             <YesNo
-              Suboptimal={rsatrophyyes}
-              Suboptimal1={rsatrophyyesnovalue}
-              Suboptimalreset={rsatrophyyesreset}
+              suboptimal={rsatrophyyes}
+              suboptimal1={rsatrophyyesnovalue}
+              suboptimalreset={rsatrophyyesreset}
             />
             <h3>Neurovascular Deficit</h3>
             <YesNo
-              Suboptimal={rsnvascularyes}
-              Suboptimal1={rsnvascularyesnovalue}
-              Suboptimalreset={rsnvascularyesreset}
+              suboptimal={rsnvascularyes}
+              suboptimal1={rsnvascularyesnovalue}
+              suboptimalreset={rsnvascularyesreset}
             />
             <h3>Orthopedic Test</h3>
             <span>
-              <RadioButton InputArray={rsorthotest} />
+              <RadioButton inputarray={rsorthotest} />
               <NotPerformed
-                Notperform={rsorthotestnperform}
+                notperform={rsorthotestnperform}
                 exam1reset={rsorthotestnpreset}
-                Reason={rsorthotestnpreason}
+                reason={rsorthotestnpreason}
                 other2={rsorthotestnpother}
                 examreset={rsorthotestnpreasonreset}
               />
@@ -352,13 +352,13 @@ function Shoulder({
               <h4>Apprehension test</h4>
               <span>
                 <NegativePositive
-                  Negativepositive={apprenhensionnegativepa}
-                  Negativepositive1={apprenhensionnegativepa1}
+                  negativepositive={apprenhensionnegativepa}
+                  negativepositive1={apprenhensionnegativepa1}
                 />
                 <NotPerformed
-                  Notperform={aptestnperform}
+                  notperform={aptestnperform}
                   exam1reset={aptestnpreset}
-                  Reason={aptestnpreason}
+                  reason={aptestnpreason}
                   other2={aptestnpother}
                   examreset={aptestnpreasonreset}
                 />
@@ -366,13 +366,13 @@ function Shoulder({
               <h4>Sulcus test</h4>
               <span>
                 <NegativePositive
-                  Negativepositive={sulcustestnegativepa}
-                  Negativepositive1={sulcustestnegativepa1}
+                  negativepositive={sulcustestnegativepa}
+                  negativepositive1={sulcustestnegativepa1}
                 />
                 <NotPerformed
-                  Notperform={sulcustestnperform}
+                  notperform={sulcustestnperform}
                   exam1reset={sulcustestnpreset}
-                  Reason={sulcustestnpreason}
+                  reason={sulcustestnpreason}
                   other2={sulcustestnpother}
                   examreset={sulcustestnpreasonreset}
                 />
@@ -380,13 +380,13 @@ function Shoulder({
               <h4>Neer Impingement test</h4>
               <span>
                 <NegativePositive
-                  Negativepositive={neeritestnegativepa}
-                  Negativepositive1={neeritestnegativepa1}
+                  negativepositive={neeritestnegativepa}
+                  negativepositive1={neeritestnegativepa1}
                 />
                 <NotPerformed
-                  Notperform={neerItestnperform}
+                  notperform={neerItestnperform}
                   exam1reset={neerItestnpreset}
-                  Reason={neerItestnpreason}
+                  reason={neerItestnpreason}
                   other2={neerItestnpother}
                   examreset={neerItestnpreasonreset}
                 />
@@ -394,13 +394,13 @@ function Shoulder({
               <h4>Hawkins Impingement test</h4>
               <span>
                 <NegativePositive
-                  Negativepositive={hawkinsnegativepa}
-                  Negativepositive1={hawkinsnegativepa1}
+                  negativepositive={hawkinsnegativepa}
+                  negativepositive1={hawkinsnegativepa1}
                 />
                 <NotPerformed
-                  Notperform={hawkinsnperform}
+                  notperform={hawkinsnperform}
                   exam1reset={hawkinsnpreset}
-                  Reason={hawkinsnpreason}
+                  reason={hawkinsnpreason}
                   other2={hawkinsnpother}
                   examreset={hawkinsnpreasonreset}
                 />
@@ -408,13 +408,13 @@ function Shoulder({
               <h4>Speed's test</h4>
               <span>
                 <NegativePositive
-                  Negativepositive={speedtestnegativepa}
-                  Negativepositive1={speedtestnegativepa1}
+                  negativepositive={speedtestnegativepa}
+                  negativepositive1={speedtestnegativepa1}
                 />
                 <NotPerformed
-                  Notperform={speedtestnperform}
+                  notperform={speedtestnperform}
                   exam1reset={speedtestnpreset}
-                  Reason={speedtestnpreason}
+                  reason={speedtestnpreason}
                   other2={speedtestnpother}
                   examreset={speedtestnpreasonreset}
                 />
@@ -422,13 +422,13 @@ function Shoulder({
               <h4>Lift Off test</h4>
               <span>
                 <NegativePositive
-                  Negativepositive={lifttestnegativepa}
-                  Negativepositive1={lifttestnegativepa1}
+                  negativepositive={lifttestnegativepa}
+                  negativepositive1={lifttestnegativepa1}
                 />
                 <NotPerformed
-                  Notperform={lifttestnperform}
+                  notperform={lifttestnperform}
                   exam1reset={lifttestnpreset}
-                  Reason={lifttestnpreason}
+                  reason={lifttestnpreason}
                   other2={lifttestnpother}
                   examreset={lifttestnpreasonreset}
                 />
@@ -436,13 +436,13 @@ function Shoulder({
               <h4>O'Brien's Test</h4>
               <span>
                 <NegativePositive
-                  Negativepositive={obrienstestnegativepa}
-                  Negativepositive1={obrienstestnegativepa1}
+                  negativepositive={obrienstestnegativepa}
+                  negativepositive1={obrienstestnegativepa1}
                 />
                 <NotPerformed
-                  Notperform={obrienstestnperform}
+                  notperform={obrienstestnperform}
                   exam1reset={obrienstestnpreset}
-                  Reason={obrienstestnpreason}
+                  reason={obrienstestnpreason}
                   other2={obrienstestnpother}
                   examreset={obrienstestnpreasonreset}
                 />
@@ -450,14 +450,14 @@ function Shoulder({
               <h4>Strength</h4>
               <span>
                 <Strength
-                  DecreasedButton={decreasedbutton}
+                  decreasedbutton={decreasedbutton}
                   strength={strength}
                   other9={other9}
-                  Decreasedreset={decreasedreset}
+                  decreasedreset={decreasedreset}
                   exam1reset7={exam1reset7}
                   examreset7={examreset7}
-                  Notperform7={notperform7}
-                  Reason7={reason7}
+                  notperform7={notperform7}
+                  reason7={reason7}
                   other11={other11}
                 />
               </span>
@@ -465,9 +465,9 @@ function Shoulder({
             <h3>Add Details</h3>
             <span style={{ display: "flex" }}>
               <YesNo
-                Suboptimal={rsadddetailsyes}
-                Suboptimal1={rsadddetailsyesnovalue}
-                Suboptimalreset={adreset}
+                suboptimal={rsadddetailsyes}
+                suboptimal1={rsadddetailsyesnovalue}
+                suboptimalreset={adreset}
               />
             </span>
           </span>

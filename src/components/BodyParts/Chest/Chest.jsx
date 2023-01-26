@@ -72,106 +72,106 @@ function Chest({
       <h1 style={{ fontSize: "32px", marginLeft: "0" }}>Chest</h1>
       <ScarVariation1
         aspect={aspect}
-        Appearance={appearance}
-        Status={status}
-        Side={side}
-        Scar={scar}
-        AppearanceOther={appearanceother}
-        StatusOther={statusother}
-        aspectOther={aspectother}
-        Scarreset={scarreset}
-        Appearancereset={appearancereset}
-        Statusreset={statusreset}
-        Sidereset={sidereset}
+        appearance={appearance}
+        status={status}
+        side={side}
+        scar={scar}
+        appearanceother={appearanceother}
+        statusother={statusother}
+        aspectother={aspectother}
+        scarreset={scarreset}
+        appearancereset={appearancereset}
+        statusreset={statusreset}
+        sidereset={sidereset}
         aspectreset={aspectreset}
       />
       <h2>Examination</h2>
-      <RadioButton InputArray={exam} />
+      <RadioButton inputarray={exam} />
       <NotPerformed
         examreset={examreset1}
         other2={other3}
-        Reason={reason1}
+        reason={reason1}
         exam1reset={exam1reset1}
-        Notperform={notperform1}
+        notperform={notperform1}
       />
 
       <h3 style={{ marginLeft: "15px" }}>Normal Exam</h3>
       <div style={{ marginLeft: "25px" }}>
-        <RadioButton InputArray={nexam} />
-        <PainScaleButton painScale={nexampainscale} />
-        <Reset1 Resetall={nexamreset} />
+        <RadioButton inputarray={nexam} />
+        <PainScaleButton painscale={nexampainscale} />
+        <Reset1 resetall={nexamreset} />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Tenderness</h4>
       <div style={{ marginLeft: "30px" }}>
-        <RadioButton InputArray={tenderness} />
-        <Reset1 Resetall={tendernessreset} />
+        <RadioButton inputarray={tenderness} />
+        <Reset1 resetall={tendernessreset} />
       </div>
       <h5 style={{ marginLeft: "30px" }}>Status</h5>
       <div style={{ marginLeft: "35px", display: "flex" }}>
-        <CheckBox InputArray1={tstatus} />
+        <CheckBox inputarray1={tstatus} />
         <Other other={tstatusother} />
-        <Reset1 Resetall={tstatusreset} />
+        <Reset1 resetall={tstatusreset} />
       </div>
       <h5 style={{ marginLeft: "30px" }}>Side</h5>
       <div style={{ marginLeft: "35px" }}>
-        <RadioButton InputArray={tside} />
-        <Reset1 Resetall={tsidereset} />
+        <RadioButton inputarray={tside} />
+        <Reset1 resetall={tsidereset} />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Ecchymosis</h4>
       <div style={{ marginLeft: "30px" }}>
         <YesNo
-          Suboptimal={ecchymosis}
-          Suboptimal1={ecchymosis1}
-          Suboptimalreset={ecchymosisreset}
+          suboptimal={ecchymosis}
+          suboptimal1={ecchymosis1}
+          suboptimalreset={ecchymosisreset}
         />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Stable</h4>
       <div style={{ marginLeft: "30px" }}>
         <YesNo
-          Suboptimal={stable}
-          Suboptimal1={stable1}
-          Suboptimalreset={stablereset}
+          suboptimal={stable}
+          suboptimal1={stable1}
+          suboptimalreset={stablereset}
         />
       </div>
       <h4 style={{ marginLeft: "25px" }}>ChestExpansion</h4>
       <div style={{ marginLeft: "30px" }}>
         <YesNo
-          Suboptimal={expansion}
-          Suboptimal1={expansion1}
-          Suboptimalreset={expansionreset}
+          suboptimal={expansion}
+          suboptimal1={expansion1}
+          suboptimalreset={expansionreset}
         />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Crepitus Ribs</h4>
       <div style={{ marginLeft: "30px" }}>
-        <RadioButton InputArray={crepitus} />
+        <RadioButton inputarray={crepitus} />
         <Zero
-          Reflexside={reflexside}
-          ReflexSreset={reflexsreset}
-          reflexSvalue={reflexsvalue}
-          Reflex={reflex1}
+          reflexside={reflexside}
+          reflexsreset={reflexsreset}
+          reflexsvalue={reflexsvalue}
+          reflex={reflex1}
           Zeroreset={zeroreset}
         />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Crepitus Sternum</h4>
       <div style={{ marginLeft: "30px" }}>
-        <RadioButton InputArray={sternum} />
+        <RadioButton inputarray={sternum} />
         <Zero
-          Reflexside={reflexside1}
-          ReflexSreset={reflexsreset1}
-          reflexSvalue={reflexsvalue1}
-          Reflex={reflex2}
-          Zeroreset={zeroreset1}
+          reflexside={reflexside1}
+          reflexsreset={reflexsreset1}
+          reflexsvalue={reflexsvalue1}
+          reflex={reflex2}
+          zeroreset={zeroreset1}
         />
       </div>
       <h4 style={{ marginLeft: "25px" }}>Crepitus Sternoclay</h4>
       <div style={{ marginLeft: "30px" }}>
-        <RadioButton InputArray={sternoclay} />
+        <RadioButton inputarray={sternoclay} />
         <Zero
-          Reflexside={reflexside2}
-          ReflexSreset={reflexsreset2}
-          reflexSvalue={reflexsvalue2}
-          Reflex={reflex3}
-          Zeroreset={zeroreset2}
+          reflexside={reflexside2}
+          reflexsreset={reflexsreset2}
+          reflexsvalue={reflexsvalue2}
+          reflex={reflex3}
+          zeroreset={zeroreset2}
         />
       </div>
     </div>
