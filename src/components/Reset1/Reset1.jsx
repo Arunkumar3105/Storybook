@@ -1,8 +1,8 @@
 import React from "react";
-function Reset1({ Resetall }) {
+function Reset1({ resetall }) {
   return (
     <>
-      {Resetall.map((value, key) => (
+      {resetall.map((value, key) => (
         <span key={key} className={"reset"}>
           <label>
             <input type="radio" name={value.name} id="appearance" />

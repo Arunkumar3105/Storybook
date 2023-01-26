@@ -4,5 +4,5 @@ export default {
   title: "reset1/resetbutton",
   component: Reset1,
 };
-const Resetall = [{ name: "tenderness" }];
-export const Reset1button = () => <Reset1 Resetall={Resetall} />;
+const resetall = [{ name: "tenderness" }];
+export const Reset1button = () => <Reset1 resetall={resetall} />;
