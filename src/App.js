@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import EditSpeciality from "./components/EditStudent";
+import AddSpeciality from "./components/AddStudent";
+import Datatable from "./components/Datatable";
+// import ListSpeciality from "./components/ListStudent";
+import Home from "./components/Home";
+import Header from "./components/Header";
+import { BrowserRouter , Routes ,Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main className="container">
+        <BrowserRouter>
+          <Header />
+          <div>
+            <Routes>
+              <Route path="/" element={<Home/>} />
+              <Route path="/Doctor-Speciality" element={<Datatable/>} />
+              <Route path="/add-Speciality" element={<AddSpeciality/>} />
+              <Route path="/edit-Speciality/:id" element={<EditSpeciality/>} />
+            </Routes>
+          </div>
+        </BrowserRouter>
+      </main>
+      
     </div>
   );
 }
